@@ -4,3 +4,5 @@ String.prototype.greet = function () {
 }
 
 console.log('Chicken'.greet());
+
+// This is what happens with polyfill
