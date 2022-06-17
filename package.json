@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "TEST_SOLUTIONS=true tap --no-coverage --jobs=1 --reporter=spec */**/exercises/*.test.js"
   },
   "repository": {
     "type": "git",
@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/fourTheorem/js-intro-workshop/issues"
   },
-  "homepage": "https://github.com/fourTheorem/js-intro-workshop#readme"
+  "homepage": "https://github.com/fourTheorem/js-intro-workshop#readme",
+  "devDependencies": {
+    "tap": "^16.3.0"
+  }
 }
