@@ -20,5 +20,8 @@
   "homepage": "https://github.com/fourTheorem/js-intro-workshop#readme",
   "devDependencies": {
     "tap": "^16.3.0"
+  },
+  "dependencies": {
+    "youtubei.js": "^1.4.3"
   }
 }
