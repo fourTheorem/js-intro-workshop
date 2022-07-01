@@ -1,29 +1,29 @@
-interface Lengthwise {
+interface Sized {
     length: number
 }
 
-function count<T extends Lengthwise>(list: T): number {
-    return list.length;
+function countSized<T extends Sized> (list: T): number {
+  return list.length
 }
 
 // SO
 
-class ChickenFlock implements Lengthwise {
-    chikens: string[]
+class ChickenFlock implements Sized {
+  chikens: string[]
 
-    add(chicken: string) {
-        this.chikens.push(chicken);
-    }
+  add (chicken: string) {
+    this.chikens.push(chicken)
+  }
 
-    get length(): number {
-        return this.chikens.length;
-    }
+  get length (): number {
+    return this.chikens.length
+  }
 }
 
 const myFlock = new ChickenFlock()
-count(myFlock)
+countSized(myFlock)
 
 // AND ALSO
 
-const myList = ['A', 'B', 'C']
-count(myList)
+const letters = ['A', 'B', 'C']
+countSized(letters)

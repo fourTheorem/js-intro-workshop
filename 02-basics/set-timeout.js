@@ -1,5 +1,12 @@
-setTimeout(() => {
-    console.log('Hello');
-}, 1000);
+/* eslint no-var: "off" */
+/* eslint prefer-const: "off" */
+/* eslint no-unused-vars: "off" */
+/* eslint no-use-before-define: "off" */
+/* eslint no-redeclare: "off" */
+/* eslint no-undef: "off" */
 
-console.log('Bye');
+setTimeout(() => {
+  console.log('Hello')
+}, 1000)
+
+console.log('Bye')

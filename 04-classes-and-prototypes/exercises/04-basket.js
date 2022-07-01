@@ -1,8 +1,10 @@
+/* eslint no-unused-vars: "off" */
+
 /*
   Exercise:
 
   Let's implement a `Basket` class.
-  
+
   The class should implement the read-only property `items` that will be used
   to store the items added to the basket
 
@@ -12,8 +14,9 @@
     * getCount: returns the number of items in the basket
     * getTotal: returns the total of all items in the basket
     * getReceipt: returns a list of strings of receipts of each item in the basket
-  
+
   Example:
+
   ```js
   const basket = new Basket()
   basket.add(new Product('Bread', 0.5, 5))
@@ -29,6 +32,7 @@
   ```
 
   Should return:
+
   ```plain
   7
   6.5
@@ -38,8 +42,8 @@
   ```
 */
 
-import Product from './03-product'
+import Product from './03-product.js'
 
 export default class Basket {
-    // Write your code here!
+  // Write your code here!
 }

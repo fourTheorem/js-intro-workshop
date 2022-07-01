@@ -19,6 +19,6 @@
  * @param {number[]} numbers
  * @returns {number}
  */
-export default function sum(numbers) {
-    // Write your code here!
+export default function sum (numbers) {
+  // Write your code here!
 }

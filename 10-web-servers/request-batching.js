@@ -3,11 +3,11 @@ import { createServer } from 'http'
 const mockHotels = [
   { name: 'the house of zeus' },
   { name: 'wild rooster motel' },
-  { name: 'zagreus palace' },
+  { name: 'zagreus palace' }
 ]
 
-let numConcurrent = new Map()
-let pendingRequests = new Map()
+const numConcurrent = new Map()
+const pendingRequests = new Map()
 
 const db = {
   query (q) {
@@ -23,7 +23,7 @@ const db = {
 
 function getHotelsForCity (cityId) {
   if (pendingRequests.has(cityId)) {
-    let concurrent = numConcurrent.get(cityId) || 0
+    const concurrent = numConcurrent.get(cityId) || 0
     numConcurrent.set(cityId, concurrent + 1)
     // *** comment the following line to disable request batching ***
     return pendingRequests.get(cityId)
@@ -31,7 +31,7 @@ function getHotelsForCity (cityId) {
 
   const asyncOperation = db.query({
     text: 'SELECT * FROM hotels WHERE cityid = $1',
-    values: [cityId],
+    values: [cityId]
   })
 
   pendingRequests.set(cityId, asyncOperation)
@@ -55,7 +55,7 @@ const server = createServer(async (req, res) => {
     return res.end()
   }
 
-  const [_, city] = matches
+  const [, city] = matches
 
   const hotels = await getHotelsForCity(city)
 

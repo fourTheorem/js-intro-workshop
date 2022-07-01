@@ -1,9 +1,11 @@
-type Person = {
+/* eslint "no-unused-vars": "off" */
+
+type Employee = {
     name: string
     age: number
 }
 
-type CEO = Person & {
+type CEO = Employee & {
     company: string
 }
 

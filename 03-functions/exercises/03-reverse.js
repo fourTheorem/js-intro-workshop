@@ -19,6 +19,6 @@
  * @param {string} text
  * @returns {string}
  */
-export default function reverse(text) {
-    // Write your code here!
+export default function reverse (text) {
+  // Write your code here!
 }

@@ -1,7 +1,7 @@
 /**
- * @param {string} name 
+ * @param {string} name
  * @returns {string}
  */
-export default function greet(name) {
-    return `Hello ${name}`
+export default function greet (name) {
+  return `Hello ${name}`
 }

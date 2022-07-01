@@ -4,4 +4,3 @@ function greeting () {
 
 console.log(greeting())
 console.log(greeting.bind('world')())
-

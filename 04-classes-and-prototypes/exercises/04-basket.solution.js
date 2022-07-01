@@ -1,47 +1,47 @@
-import Product from './03-product.solution'
+import Product from './03-product.solution.js'
 
 export default class Basket {
-    #items = []
+  #items = []
 
-    get items() { return this.#items }
+  get items () { return this.#items }
 
-    add(product) {
-      if (product instanceof Product) {
-        this.items.push(product)
-      }
+  add (product) {
+    if (product instanceof Product) {
+      this.items.push(product)
+    }
+  }
+
+  getCount () {
+    let count = 0
+
+    for (const item of this.#items) {
+      count += item.quantity
     }
 
-    getCount() {
-      let count = 0
+    return count
+  }
 
-      for (const item of this.#items) {
-        count += item.quantity
-      }
+  getTotal () {
+    let total = 0
 
-      return count
+    for (const item of this.#items) {
+      total += item.getTotal()
     }
 
-    getTotal() {
-      let total = 0
+    return total
+  }
 
-      for (const item of this.#items) {
-        total += item.getTotal()
-      }
+  remove (product) {
+    this.#items = this.#items.filter((item) => {
+      return item.name !== product
+    })
+  }
 
-      return total
-    }
+  getReceipt () {
+    const receipts = this.#items.map((item) => {
+      return item.getReceipt()
+    })
 
-    remove(product) {
-      this.#items = this.#items.filter((item) => {
-        return item.name !== product
-      });
-    }
-
-    getReceipt() {
-      const receipts = this.#items.map((item) => {
-        return item.getReceipt()
-      })
-
-      return receipts
-    }
+    return receipts
+  }
 }

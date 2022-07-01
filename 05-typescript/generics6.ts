@@ -1,3 +1,5 @@
+/* eslint "no-unused-vars": "off" */
+
 interface Todo {
     title: string;
     description: string;
@@ -7,6 +9,6 @@ interface Todo {
 type TodoPreview = Pick<Todo, 'title' | 'completed'>;
 
 const todo: TodoPreview = {
-    title: 'Clean room',
-    completed: false,
-};
+  title: 'Clean room',
+  completed: false
+}

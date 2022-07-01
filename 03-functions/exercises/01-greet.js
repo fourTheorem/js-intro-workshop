@@ -17,9 +17,9 @@
 */
 
 /**
- * @param {string} name 
+ * @param {string} name
  * @returns {string}
  */
-export default function greet(name) {
-    // Write your code here!
+export default function greet (name) {
+  // Write your code here!
 }
