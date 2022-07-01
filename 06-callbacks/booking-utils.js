@@ -1,3 +1,6 @@
+// simulated functions.
+// In real life these functions would be using some data storage to fetch the data
+
 export function getLatestBooking (userId, cb) {
   const booking = {
     id: '123',
