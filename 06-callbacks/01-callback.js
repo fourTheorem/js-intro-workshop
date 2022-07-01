@@ -8,6 +8,7 @@
   The callback function is called for us when the asynchronous operation is complete.
 */
 
+// example of callback-based async function
 function delay (milliseconds, cb) {
   setTimeout(cb, milliseconds)
 }

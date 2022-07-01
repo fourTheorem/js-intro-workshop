@@ -34,11 +34,15 @@
   ```
 
   Make sure to call the callback function when the operation is complete and to propagate errors correctly
+
+  Test your solution with:
+
+  > npm run ex -- 06-callbacks/exercises/01-file-bomber.test.js
 */
 
 import { writeFile, stat } from 'fs'
 
-export function fileBomber (filePath, cb) {
+export default function fileBomber (filePath, cb) {
   // write your code here
   // 1. check if the path exists and it is a file
   // 2. if it is a file, write a bomb emoji ("💣") into that file and call the callback with the result "bombed"

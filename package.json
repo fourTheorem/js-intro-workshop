@@ -6,15 +6,16 @@
   "type": "module",
   "scripts": {
     "test:lint": "eslint .",
-    "test:exercises": "TEST_SOLUTIONS=true tap --no-coverage --jobs=1 --reporter=spec */**/exercises/*.test.js",
-    "test": "npm run test:lint && npm run test:exercises"
+    "test:exercises": "TEST_SOLUTIONS=true npm run ex -- */**/exercises/*.test.js",
+    "test": "npm run test:lint && npm run test:exercises",
+    "ex": "tap --no-coverage --jobs=1 --reporter=spec --node-arg=\"--loader=esmock\" --node-arg=\"--no-warnings\""
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fourTheorem/js-intro-workshop.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Guilherme della Rosa, Luciano Mammino",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/fourTheorem/js-intro-workshop/issues"
@@ -28,6 +29,7 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-n": "^15.2.3",
     "eslint-plugin-promise": "^6.0.0",
+    "esmock": "^1.7.5",
     "tap": "^16.3.0"
   },
   "dependencies": {
