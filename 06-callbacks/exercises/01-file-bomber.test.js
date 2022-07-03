@@ -61,7 +61,7 @@ tap.test('It does not bomb a path that is not a file', async t => {
       fileBomber('somefile.txt', (err, result) => {
         t.equal(err, null, 'no error returned')
         t.equal(result, 'not bombed', 'content is "not bombed"')
-        t.deepEqual([writtenPath, writtenContent], [null, null], 'Did not write anything')
+        t.same([writtenPath, writtenContent], [null, null], 'Did not write anything')
         resolve()
       })
     } catch (err) {
@@ -93,7 +93,7 @@ tap.test('It propagates stat errors', async t => {
       fileBomber('somefile.txt', (err, result) => {
         t.equal(err, expectedError, 'error propagated correctly')
         t.notOk(result, 'result is undefined or null')
-        t.deepEqual([writtenPath, writtenContent], [null, null], 'Did not write anything')
+        t.same([writtenPath, writtenContent], [null, null], 'Did not write anything')
         resolve()
       })
     } catch (err) {
@@ -127,7 +127,7 @@ tap.test('It propagates writeFile errors', async t => {
       fileBomber('somefile.txt', (err, result) => {
         t.equal(err, expectedError, 'error propagated correctly')
         t.notOk(result, 'result is undefined or null')
-        t.deepEqual([writtenPath, writtenContent], ['somefile.txt', '💣'], 'Did try to write the correct content to the correct file')
+        t.same([writtenPath, writtenContent], ['somefile.txt', '💣'], 'Did try to write the correct content to the correct file')
         resolve()
       })
     } catch (err) {

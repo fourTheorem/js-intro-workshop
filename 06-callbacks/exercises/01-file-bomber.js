@@ -20,7 +20,7 @@
 
   To check that the path exists and it is a file you can use the `fs.stat` function:
 
-  Examole:
+  Example:
 
   ```js
   import { stat } from 'fs'
