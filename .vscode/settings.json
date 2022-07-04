@@ -1,0 +1,7 @@
+{
+  "editor.tabSize": 2,
+  "files.trimTrailingWhitespace": true,
+  "search.exclude": {
+    "**/node_modules": true
+  }
+}
