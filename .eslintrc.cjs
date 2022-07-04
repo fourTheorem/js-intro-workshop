@@ -17,5 +17,6 @@ module.exports = {
   ],
   ignorePatterns: ['**/*.transpiled.js'],
   rules: {
+    "prefer-promise-reject-errors": "off"
   }
 }
