@@ -11,5 +11,5 @@ tap.test('print2dArray', async (t) => {
   const result = print2dArray(input)
   const expected = [1, 2, 3, 4, 5, 6]
 
-  t.equal(result, expected)
+  t.same(result, expected)
 })

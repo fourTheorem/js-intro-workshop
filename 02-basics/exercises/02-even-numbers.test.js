@@ -11,5 +11,5 @@ tap.test('evenNumbers', async (t) => {
   const result = evenNumbers(input)
   const expected = [2, 4, 6, 8, 10]
 
-  t.equal(result, expected)
+  t.same(result, expected)
 })

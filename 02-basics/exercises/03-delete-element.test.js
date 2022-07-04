@@ -12,7 +12,7 @@ tap.test('deleteElement', async (t) => {
   const result = deleteElement(input, elementToRemove)
   const expected = [7, 9, 13, 27, 49, 80]
 
-  t.equal(result, expected)
+  t.same(result, expected)
 })
 
 tap.test('deleteElement with number not in array', async (t) => {
@@ -22,5 +22,5 @@ tap.test('deleteElement with number not in array', async (t) => {
   const result = deleteElement(input, elementToRemove)
   const expected = input
 
-  t.equal(result, expected)
+  t.same(result, expected)
 })
