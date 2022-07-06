@@ -18,6 +18,14 @@ console.log(promiseObj) // Promise { <pending> }
 // - fulfilled (resolved)
 // - rejected (error)
 
+// a quick way to create a resolved promise is:
+const resolved = Promise.resolve('🍀')
+console.log(resolved) // Promise { '🍀' }
+
+// a quick way to create a rejected promise is:
+const rejected = Promise.reject('💩')
+console.log(rejected) // Promise { <rejected> '💩' }
+
 function doSomethingAsync (arg1, arg2) {
   return new Promise((resolve, reject) => {
     // do something async
