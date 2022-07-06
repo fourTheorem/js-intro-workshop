@@ -17,6 +17,10 @@
   ```plain
   Response is: chicken
   ```
+
+  Test your solution with:
+
+  > npm run ex -- 07-promises/exercises/01-resolve-promise.test.js
 */
 
 /**

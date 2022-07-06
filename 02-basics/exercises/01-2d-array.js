@@ -6,6 +6,7 @@
   flat array if values.
 
   Example:
+
   ```js
   print2DArray([[1, 2],
                 [3, 4],
@@ -13,9 +14,14 @@
   ```
 
   Should return:
+
   ```plain
   [1, 2, 3, 4, 5, 6]
   ```
+
+  Test your solution with:
+
+  > npm run ex -- 02-basics/exercises/01-2d-array.test.js
 */
 
 /**

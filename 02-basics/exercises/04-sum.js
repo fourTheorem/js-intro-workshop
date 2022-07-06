@@ -6,14 +6,20 @@
   returns the sum of them
 
   Example:
+
   ```js
   sum([2, 6, 17, 20, 1, 3])
   ```
 
   Should return:
+
   ```plain
   49
   ```
+
+  Test your solution with:
+
+  > npm run ex -- 02-basics/exercises/04-sum.test.js
 */
 
 /**

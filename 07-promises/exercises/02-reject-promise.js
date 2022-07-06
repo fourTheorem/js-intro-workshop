@@ -6,6 +6,7 @@
   using `Promise.reject()`.
 
   Example:
+
   ```js
   boo()
     .catch((err) => {
@@ -14,6 +15,7 @@
   ```
 
   Should print:
+
   ```plain
   Error is: Boo!
   ```

@@ -10,15 +10,21 @@
   return the person's full name based on the values received on the constructor.
 
   Example:
+
   ```js
   const bezos = new Person('Jeff', 'Bezos')
   bezos.fullName()
   ```
 
   Should return:
+
   ```plain
   Jeff Bezos
   ```
+
+  Test your solution with:
+
+  > npm run ex -- 04-classes-and-prototypes/exercises/01-person.test.js
 */
 
 export default class Person {

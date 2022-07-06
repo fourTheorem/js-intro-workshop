@@ -7,6 +7,7 @@
   the value to be modified.
 
   Example:
+
   ```js
   const transformer = (value) => `Super ${value}`;
   transform(Promise.resolve('chicken'), transformer)
@@ -16,9 +17,14 @@
   ```
 
   Should print:
+
   ```plain
   Transformed value is: Super chicken
   ```
+
+  Test your solution with:
+
+  > npm run ex -- 07-promises/exercises/03-transform.test.js
 */
 
 /**

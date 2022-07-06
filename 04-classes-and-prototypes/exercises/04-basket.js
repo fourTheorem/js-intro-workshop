@@ -40,6 +40,10 @@
   6
   5.5
   ```
+
+  Test your solution with:
+
+  > npm run ex -- 04-classes-and-prototypes/exercises/04-basket.test.js
 */
 
 import Product from './03-product.js'

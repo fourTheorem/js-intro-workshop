@@ -10,6 +10,7 @@
     * bark: A static method that returns the string `Woof!`
 
   Example:
+
   ```js
   const rocky = new Dog('Rocky')
   rocky.introduce()
@@ -17,10 +18,15 @@
   ```
 
   Should return:
+
   ```plain
   My name is Rocky
   Woof!
   ```
+
+  Test your solution with:
+
+  > npm run ex -- 04-classes-and-prototypes/exercises/02-dog.test.js
 */
 
 export default class Dog {

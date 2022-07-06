@@ -12,6 +12,7 @@
     * getReceipt: returns a string with the summary of the purchase: `Product: {name}, Quantity: {quantity}, Total: {total}`
 
   Example:
+
   ```js
   const bread = new Product('Bread', 0.5, 5)
   bread.getTotal()
@@ -23,11 +24,16 @@
   ```
 
   Should return:
+
   ```plain
   2.5
   5
   Product: Bread, Quantity: 10, Total: 5
   ```
+
+  Test your solution with:
+
+  > npm run ex -- 04-classes-and-prototypes/exercises/03-product.test.js
 */
 
 export default class Product {
