@@ -17,6 +17,10 @@
   ```plain
   Error is: Boo!
   ```
+
+  Test your solution with:
+
+  > npm run ex -- 07-promises/exercises/02-reject-promise.test.js
 */
 
 /**

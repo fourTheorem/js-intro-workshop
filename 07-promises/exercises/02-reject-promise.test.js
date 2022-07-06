@@ -5,18 +5,14 @@ import rejectPromiseTpl from './02-reject-promise.js'
 
 const rejectPromise = process.env.TEST_SOLUTIONS ? rejectPromiseSolution : rejectPromiseTpl
 
-tap.test('returns a promise', async (t) => {
+tap.test('returns a promise that rejects with Boo!', async (t) => {
   const promise = rejectPromise()
-
-  t.type(promise, Promise)
-})
-
-tap.test('rejects with Boo!', async (t) => {
-  return rejectPromise()
-    .then(() => {
-      t.fail('This promise should have rejected')
-    })
-    .catch((err) => {
-      t.equal(err, 'Boo!')
-    })
+  t.type(promise, Promise, 'It returns a promise')
+  try {
+    await promise
+    t.fail('This promise should have rejected')
+  } catch (err) {
+    console.log(err)
+    t.equal(err, 'Boo!', 'Rejects with "Boo!"')
+  }
 })
