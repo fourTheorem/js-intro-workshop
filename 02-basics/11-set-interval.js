@@ -9,9 +9,8 @@ setInterval(() => {
   console.log('Ping')
 }, 1000)
 
-// TO CANCEL AN INTERVAL
-
 const interval = setInterval(() => {
   console.log('Ping')
+  // you can cancel an interval by calling clearInterval
   clearInterval(interval)
 }, 1000)
