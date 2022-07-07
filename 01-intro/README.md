@@ -1,3 +1,8 @@
-TODO:
+TODO: explain these concepts and highlight differences between them
 
-explain difference between JavaScript, EcmaScript, Node.js, TypeScript, JSX, Babel
+  - JavaScript
+  - EcmaScript
+  - Node.js
+  - TypeScript
+  - JSX
+  - Babel (and other transpilers)
