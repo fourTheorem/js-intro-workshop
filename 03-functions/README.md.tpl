@@ -1,4 +1,4 @@
-# 02. Basics
+# 03. Functions
 
 TODO:
 

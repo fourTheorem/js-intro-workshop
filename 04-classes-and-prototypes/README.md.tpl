@@ -1,4 +1,4 @@
-# 02. Basics
+# 04. Classes and Prototypes
 
 TODO:
 

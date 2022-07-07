@@ -1,4 +1,4 @@
-# 02. Basics
+# 05. TypeScript
 
 TODO:
 

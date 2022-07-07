@@ -64,6 +64,22 @@ node ${filePath}
   return examples
 }
 
+function generateNavigationMarkdown (readmes, current) {
+  const index = readmes.indexOf(current)
+  const prev = readmes[index - 1]
+  const next = readmes[index + 1]
+
+  const prevLink = prev ? `[⬅️ ${dirname(prev)}](/${dirname(prev)}/README.md)` : '  '
+  const homeLink = '[🏠](/README.md)'
+  const nextLink = next ? `[${dirname(next)} ➡️](/${dirname(next)}/README.md)` : '  '
+
+  const markdown = `
+| ${prevLink} | ${homeLink} | ${nextLink} |
+|:${'-'.repeat(prevLink.length)}|:${'-'.repeat(homeLink.length - 1)}:|${'-'.repeat(nextLink.length)}:|
+`
+  return markdown
+}
+
 const readmes = await glob('**/README.md.tpl')
 
 for (const readme of readmes) {
@@ -75,9 +91,11 @@ for (const readme of readmes) {
 
   const examplesData = await Promise.all(examples.map(processExample))
   const examplesMarkdown = generateExamplesMarkdown(examplesData)
+  const navigationMarkdown = generateNavigationMarkdown(readmes, readme)
 
   const view = {
-    examples: examplesMarkdown
+    examples: examplesMarkdown,
+    navigation: navigationMarkdown
   }
 
   const readmeTemplate = await readFile(readme, 'utf8')

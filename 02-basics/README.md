@@ -1,6 +1,6 @@
 <!-- ⚠️ FILE AUTOMATICALLY GENERATED. PLEASE DO NOT EDIT. CHANGE README.md.tpl INSTEAD! ⚠️  -->
 
-# Basics
+# 02. Basics
 
 TODO:
 
@@ -339,6 +339,7 @@ node ./02-basics/11-set-interval.js
 
 ---
 
-TODO:
 
-PREV - NEXT
+| [⬅️ 01-intro](/01-intro/README.md) | [🏠](/README.md) | [03-functions ➡️](/03-functions/README.md) |
+|:----------------------------------|:---------------:|------------------------------------------:|
+

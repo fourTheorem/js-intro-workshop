@@ -1,4 +1,4 @@
-# 02. Basics
+# 07. Promises
 
 TODO:
 
