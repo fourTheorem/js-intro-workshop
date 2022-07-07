@@ -29,4 +29,4 @@ await pipeline(
 // make this script executable with:
 // > chmod +x 10-web-servers-and-cli/04-uppercasify-cli.js
 // Now if you want to use this script to "uppercasify" the entire book Moby Dick in real time:
-// > curl https://www.gutenberg.org/files/2701/old/moby10b.txt | node 10-web-servers-and-cli/04-uppercasify-cli.js
+// > curl -s https://www.gutenberg.org/files/2701/old/moby10b.txt | node 10-web-servers-and-cli/04-uppercasify-cli.js

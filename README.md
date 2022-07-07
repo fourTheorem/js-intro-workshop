@@ -9,9 +9,18 @@ A workshop for those who want to get started with JavaScript quickly.
   - Node.js 16+
   - Npm 8+
 
-## Where to start
+Before getting started, make sure to clone this repository locally and run:
 
-TODO
+```bash
+npm install
+```
+
+to install all the necessary dependencies.
+
+
+## Getting started
+
+Head to [`01-intro`](/01-intro/README.md) to get started with this workshop!
 
 
 ## Contribute
