@@ -11,6 +11,8 @@ Can you tell what value will be printed by the following code?
 <details>
 <summary>👀  Check out the answer!</summary>
 
+<quote>
+
 ### Answer: `undefined`
 
 - This is because of the combined effect of variable scoping and variable hoisting
@@ -32,6 +34,8 @@ function test()
 
 test();
 ```
+
+</quote>
 
 </details>
 
