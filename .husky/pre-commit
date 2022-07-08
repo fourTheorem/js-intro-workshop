@@ -6,5 +6,6 @@ added_files=$(git diff --name-only --cached --diff-filter=d)
 npm run render-readmes
 
 git add ${added_files}
+git add '**/README.md'
 
 exit 0
