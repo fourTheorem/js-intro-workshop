@@ -1,5 +1,11 @@
+/*
+
+Generics can also have constraints
+
+*/
+
 interface Sized {
-    length: number
+  length: number
 }
 
 function countSized<T extends Sized> (list: T): number {

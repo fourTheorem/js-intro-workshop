@@ -7,7 +7,7 @@ TODO:
 
 ## [`01-interfaces.ts`](./01-interfaces.ts)
 
-
+TypeScript allows you to define generic interfaces (which don't really exist in plain JavaScript).
 
 ```ts
 interface IAnimal {
@@ -38,7 +38,9 @@ ts-node ./05-typescript/01-interfaces.ts
 
 ## [`02-types1.ts`](./02-types1.ts)
 
+With TypeScript, you can specify the type of every variable during an assignment.
 
+In most cases, this is not necessary because TypeScript can infer these types/
 
 ```ts
 // Basic types
@@ -59,26 +61,28 @@ ts-node ./05-typescript/02-types1.ts
 
 ## [`03-types2.ts`](./03-types2.ts)
 
+TypeScropt allows the definition of type aliases.
 
+Aliasing doesn’t actually create a new type - it creates a new name to refer to that type
 
 ```ts
 // Type aliases
 type MyString = string
 
-const companyName: MyString = 'Tesla' // Aliasing doesn’t actually create a new type - it creates a new name to refer to that type
+const companyName: MyString = 'Tesla'
 
 // We can also have a type alias refer to itself in a property:
 type Tree<T> = {
-    value: T;
-    left?: Tree<T>;
-    right?: Tree<T>;
+  value: T;
+  left?: Tree<T>;
+  right?: Tree<T>;
 };
 
 interface Person {
-    name: string;
+  name: string;
 }
 
-const people: Tree<Person> = { /* eslint "no-unused-vars": "off" */
+const people: Tree<Person> = {
   value: {
     name: 'Elon Musk'
   }
@@ -94,16 +98,16 @@ ts-node ./05-typescript/03-types2.ts
 
 ## [`04-types3.ts`](./04-types3.ts)
 
-
+Types can also be defined using type unions (`|` operator) and type intersections (`&` operator).
 
 ```ts
 type Employee = {
-    name: string
-    age: number
+  name: string
+  age: number
 }
 
 type CEO = Employee & {
-    company: string
+  company: string
 }
 
 type PublicProfile = Pick<CEO, 'name' | 'company'>
@@ -118,7 +122,7 @@ ts-node ./05-typescript/04-types3.ts
 
 ## [`05-generics1.ts`](./05-generics1.ts)
 
-
+TypeScript supports generic types
 
 ```ts
 function append<T> (list: T[], item: T): T[] {
@@ -161,11 +165,11 @@ ts-node ./05-typescript/06-generics2.ts
 
 ## [`07-generics3.ts`](./07-generics3.ts)
 
-
+Generics can also have constraints
 
 ```ts
 interface Sized {
-    length: number
+  length: number
 }
 
 function countSized<T extends Sized> (list: T): number {
@@ -204,7 +208,10 @@ ts-node ./05-typescript/07-generics3.ts
 
 ## [`08-generics4.ts`](./08-generics4.ts)
 
+The most common use case for generics is to declare what is returned by a very generic API. For instance the `fetch` API returns data that depends on what
+the server will return.
 
+If we want to assume the response will be of a particular type (so we can type check how we use that response) we can use generics with `fetch`.
 
 ```ts
 async function fetchApi<ResultType> (path: string): Promise<ResultType> {
@@ -215,11 +222,11 @@ async function fetchApi<ResultType> (path: string): Promise<ResultType> {
 // SO
 
 interface UsersListResult {
-    count: number
-    items: {
-        id: string
-        name: string
-    }
+  count: number
+  items: {
+    id: string
+    name: string
+  }
 }
 
 const result = await fetchApi<UsersListResult>('/users/all')
@@ -241,8 +248,8 @@ ts-node ./05-typescript/08-generics4.ts
 
 ```ts
 interface ListResult<EntityType> {
-    count: number
-    items: EntityType[]
+  count: number
+  items: EntityType[]
 }
 
 async function fetchApi<EntityType, ResultType = ListResult<EntityType>> (path: string): Promise<ResultType> {
@@ -251,9 +258,10 @@ async function fetchApi<EntityType, ResultType = ListResult<EntityType>> (path: 
 }
 
 // SO
+
 interface UserEntity {
-    id: string
-    name: string
+  id: string
+  name: string
 }
 
 const result = await fetchApi<UserEntity>('/users/all')
@@ -271,13 +279,17 @@ ts-node ./05-typescript/09-generics5.ts
 
 ## [`10-generics6.ts`](./10-generics6.ts)
 
+TypeScript offers a set of Utility types.
 
+These are generic types that can be use to construct types from other existing types.
+
+An example is the `Pick` utility type that allows us to create a type by "picking" a set of properties from an existing type.
 
 ```ts
 interface Todo {
-    title: string;
-    description: string;
-    completed: boolean;
+  title: string;
+  description: string;
+  completed: boolean;
 }
 
 type TodoPreview = Pick<Todo, 'title' | 'completed'>;

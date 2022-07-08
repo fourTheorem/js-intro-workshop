@@ -1,5 +1,13 @@
 /* eslint "no-unused-vars": "off" */
 
+/*
+
+With TypeScript, you can specify the type of every variable during an assignment.
+
+In most cases, this is not necessary because TypeScript can infer these types/
+
+*/
+
 // Basic types
 const person: string = 'Elon Musk'
 const age: number = 50

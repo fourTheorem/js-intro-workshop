@@ -1,20 +1,30 @@
+/* eslint "no-unused-vars": "off" */
+
+/*
+
+TypeScropt allows the definition of type aliases.
+
+Aliasing doesn’t actually create a new type - it creates a new name to refer to that type
+
+*/
+
 // Type aliases
 type MyString = string
 
-const companyName: MyString = 'Tesla' // Aliasing doesn’t actually create a new type - it creates a new name to refer to that type
+const companyName: MyString = 'Tesla'
 
 // We can also have a type alias refer to itself in a property:
 type Tree<T> = {
-    value: T;
-    left?: Tree<T>;
-    right?: Tree<T>;
+  value: T;
+  left?: Tree<T>;
+  right?: Tree<T>;
 };
 
 interface Person {
-    name: string;
+  name: string;
 }
 
-const people: Tree<Person> = { /* eslint "no-unused-vars": "off" */
+const people: Tree<Person> = {
   value: {
     name: 'Elon Musk'
   }

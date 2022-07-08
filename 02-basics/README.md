@@ -190,7 +190,7 @@ Here's a bit of a challenge for you.
 Can you tell what value will be printed by the following code?
 
 <details>
-<summary>👀  Check out the answer!</summary>
+<summary>👀  <strong>Check out the answer!</strong></summary>
 
 > ### Answer: `10`
 >
@@ -209,7 +209,7 @@ function test () {
 }
 
 test()
-console.log(x)
+console.log(x) // ???
 ```
 
 Execute this example with:
@@ -226,7 +226,7 @@ Here's another of a challenge for you.
 Can you tell what value will be printed by the following code?
 
 <details>
-<summary>👀  Check out the answer!</summary>
+<summary>👀  <strong>Check out the answer!</strong></summary>
 
 > ### Answer: `undefined`
 >
@@ -260,7 +260,7 @@ function test () {
     var x = 50
   }
 
-  console.log(x)
+  console.log(x) // ???
 }
 
 test()

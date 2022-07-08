@@ -1,6 +1,6 @@
 interface ListResult<EntityType> {
-    count: number
-    items: EntityType[]
+  count: number
+  items: EntityType[]
 }
 
 async function fetchApi<EntityType, ResultType = ListResult<EntityType>> (path: string): Promise<ResultType> {
@@ -9,9 +9,10 @@ async function fetchApi<EntityType, ResultType = ListResult<EntityType>> (path: 
 }
 
 // SO
+
 interface UserEntity {
-    id: string
-    name: string
+  id: string
+  name: string
 }
 
 const result = await fetchApi<UserEntity>('/users/all')

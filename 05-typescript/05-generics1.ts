@@ -1,5 +1,11 @@
 /* eslint no-unused-vars: "off" */
 
+/*
+
+TypeScript supports generic types
+
+*/
+
 function append<T> (list: T[], item: T): T[] {
   return [...list, item]
 }
