@@ -192,16 +192,13 @@ Can you tell what value will be printed by the following code?
 <details>
 <summary>👀  Check out the answer!</summary>
 
-<quote>
-
-### Answer: `10`
-
-- Here the variable `x` declared (and of course initialized) outside the function `test`.
-- It has a global scope and that’s why it is accessible anywhere in this scope globally.
-- However, the one declared and initialized inside the `test` function can be accessible only inside that function.
-- So the below code snippet will print 20 on the console upon execution.
-
-</quote>
+> ### Answer: `10`
+>
+> - Here the variable `x` declared (and of course initialized) outside the function `test`.
+> - It has a global scope and that’s why it is accessible anywhere in this scope globally.
+> - However, the one declared and initialized inside the `test` function can be accessible only inside that function.
+> - So the below code snippet will print 20 on the console upon execution.
+>
 
 </details>
 
@@ -231,31 +228,27 @@ Can you tell what value will be printed by the following code?
 <details>
 <summary>👀  Check out the answer!</summary>
 
-<quote>
-
-### Answer: `undefined`
-
-- This is because of the combined effect of variable scoping and variable hoisting
-- The above code snippet will be interpreted as the following before execution:
-
-```js
-var x;
-x = 10;
-
-function test()
-{
-  var x;
-  if (x > 20) {
-    x = 50;
-  }
-
-  console.log(x);
-}
-
-test();
-```
-
-</quote>
+> ### Answer: `undefined`
+>
+> - This is because of the combined effect of variable scoping and variable hoisting
+> - The above code snippet will be interpreted as the following before execution:
+>
+> ```js
+> var x;
+> x = 10;
+>
+> function test()
+> {
+>   var x;
+>   if (x > 20) {
+>     x = 50;
+>   }
+>
+>   console.log(x);
+> }
+>
+> test();
+> ```
 
 </details>
 
