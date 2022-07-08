@@ -2,7 +2,12 @@
 
 # 06. Callbacks
 
-TODO:
+In this section we will get to learn about callbacks:
+
+  - What callbacks are and how to use them
+  - How to handle errors in callbacks
+  - The problem with callback
+
 
 
 ## [`01-callback.js`](./01-callback.js)

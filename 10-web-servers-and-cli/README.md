@@ -2,7 +2,10 @@
 
 # 10. Web Servers and CLI apps
 
-TODO:
+In this final (and bonus) chapter we will show some examples of how easy it is to create web servers and CLI applications with Node.js.
+
+This section does not try to be comprehensive but it just wants to give you some inputs to start exploring these topics.
+
 
 
 ## [`01-hello-web-server.js`](./01-hello-web-server.js)

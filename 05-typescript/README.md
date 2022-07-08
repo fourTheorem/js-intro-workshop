@@ -2,7 +2,15 @@
 
 # 05. TypeScript
 
-TODO:
+In this chapter we will learn the basics of TypeScript.
+
+We will discuss:
+
+  - Interfaces
+  - Types
+  - Generics
+  - Advanced types with utility types
+
 
 
 ## [`01-interfaces.ts`](./01-interfaces.ts)
