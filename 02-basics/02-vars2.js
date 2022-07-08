@@ -5,6 +5,14 @@
 /* eslint no-redeclare: "off" */
 /* eslint no-undef: "off" */
 
+/*
+
+There are different ways to declare variables in JavaScript.
+
+The three main keywords are `var`, `let` and `const`.
+
+*/
+
 var a = 1
 var a = 2
 var a = 3

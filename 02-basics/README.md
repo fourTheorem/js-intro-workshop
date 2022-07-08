@@ -2,7 +2,13 @@
 
 # 02. Basics
 
-TODO:
+In this chapter we are going to learn some of the basics of the JavaScript language.
+
+We will be talking about:
+
+  - variables
+  - hoisting
+  - timer functions
 
 
 ## [`01-vars1.js`](./01-vars1.js)
@@ -30,7 +36,9 @@ node ./02-basics/01-vars1.js
 
 ## [`02-vars2.js`](./02-vars2.js)
 
+There are different ways to declare variables in JavaScript.
 
+The three main keywords are `var`, `let` and `const`.
 
 ```js
 var a = 1
@@ -67,7 +75,11 @@ node ./02-basics/02-vars2.js
 
 ## [`03-hoisting1.js`](./03-hoisting1.js)
 
+One of the most confusing aspects of JavaScript is **hoisting**.
 
+Hoisting is a JavaScript feature that causes variables and function declarations to be moved to the top of their scope before code execution.
+
+This means that you can use a variable or function before it is declared.
 
 ```js
 console.log(test) // undefined
@@ -116,14 +128,9 @@ node ./02-basics/04-hoisting2.js
 
 ## [`05-hoisting3.js`](./05-hoisting3.js)
 
-
+When the variable is used inside the function, the variable is hoisted only to the top of the function
 
 ```js
-/**
- * when the variable is used inside the function,
- * the variable is hoisted only to the top of the function
- */
-
 var a = 4
 
 function greet () {
@@ -145,13 +152,9 @@ node ./02-basics/05-hoisting3.js
 
 ## [`06-hoisting4.js`](./06-hoisting4.js)
 
-
+When using `let`, the variable is NOT hoisted!
 
 ```js
-/**
- * when using let, the variable is not hoisted
- */
-
 a = 5 // ReferenceError: Cannot access 'a' before initialization
 console.log(a)
 let a
@@ -182,13 +185,23 @@ node ./02-basics/06-hoisting4.js
 
 ## [`07-hoisting-challenge1.js`](./07-hoisting-challenge1.js)
 
+Here's a bit of a challenge for you.
 
+Can you tell what value will be printed by the following code?
+
+<detail>
+<summary>Check out the answer!</summary>
+
+Answer: **10**
+
+- Here the variable `x` declared (and of course initialized) outside the function `test`.
+- It has a global scope and that’s why it is accessible anywhere in this scope globally.
+- However, the one declared and initialized inside the `test` function can be accessible only inside that function.
+- So the below code snippet will print 20 on the console upon execution.
+
+</detail>
 
 ```js
-/**
- * What value will be printed?
- */
-
 var x = 10
 function test () {
   var x = 20
@@ -196,15 +209,6 @@ function test () {
 
 test()
 console.log(x)
-
-/**
- * Answer: 10
- *
- * Here the variable ‘x’ declared (and of course initialized) outside the function ‘test’
- * has a global scope and that’s why it is accessible anywhere in this scope globally.
- * However, the one declared and initialized inside the ‘test’ function can be accessible only inside that function.
- * So the below code snippet will print 20 on the console upon execution.
- */
 ```
 
 Execute this example with:
@@ -216,13 +220,38 @@ node ./02-basics/07-hoisting-challenge1.js
 
 ## [`08-hoisting-challenge2.js`](./08-hoisting-challenge2.js)
 
+Here's another of a challenge for you.
 
+Can you tell what value will be printed by the following code?
+
+<detail>
+<summary>Check out the answer!</summary>
+
+Answer: `undefined`
+
+- This is because of the combined effect of variable scoping and variable hoisting
+- The above code snippet will be interpreted as the following before execution:
 
 ```js
-/**
- * What value will be printed?
- */
+var x;
+x = 10;
 
+function test()
+{
+  var x;
+  if (x > 20) {
+    x = 50;
+  }
+
+  console.log(x);
+}
+
+test();
+```
+
+</detail>
+
+```js
 var x = 10
 
 function test () {
@@ -234,28 +263,6 @@ function test () {
 }
 
 test()
-
-/**
- * Answer: undefined
- *
- * This is because of the combined effect of variable scoping and variable hoisting
- * The above code snippet will be interpreted as the following before execution:
-
-  var x;
-  x = 10;
-
-  function test()
-  {
-    var x;
-    if (x > 20) {
-      x = 50;
-    }
-
-    console.log(x);
-  }
-
-  test();
- */
 ```
 
 Execute this example with:
@@ -267,25 +274,23 @@ node ./02-basics/08-hoisting-challenge2.js
 
 ## [`09-set-immediate.js`](./09-set-immediate.js)
 
+JavaScript offers different pieces of functionality to deal with timers and delayed actions.
 
+`setImmediate()` and `setTimeout()` are similar, but behave in different ways depending on when they are called.
+
+- `setImmediate()` executes once the current poll phase completes.
+- `setTimeout()` is scheduled to be run after a minimum threshold in ms has elapsed.
 
 ```js
-/**
- * setImmediate() and setTimeout() are similar, but behave in different ways depending on when they are called.
- *
- * setImmediate() executes once the current poll phase completes.
- * setTimeout() is scheduled to be run after a minimum threshold in ms has elapsed.
- */
-
-setImmediate(() => {
-  console.log('immediate')
-})
-
 setTimeout(() => {
-  console.log('timeout')
+  console.log('timeout') // 3.
 }, 0)
 
-console.log('global')
+setImmediate(() => {
+  console.log('immediate') // 2.
+})
+
+console.log('global') // 1.
 ```
 
 Execute this example with:
@@ -297,7 +302,9 @@ node ./02-basics/09-set-immediate.js
 
 ## [`10-set-timeout.js`](./10-set-timeout.js)
 
+In this example we are printing "Hello" after about 1 second.
 
+`SetTimeout` will execute the code specified in the passed function only once.
 
 ```js
 setTimeout(() => {
@@ -316,18 +323,18 @@ node ./02-basics/10-set-timeout.js
 
 ## [`11-set-interval.js`](./11-set-interval.js)
 
-
+If you want to execute a certain function repeatedly at specific intervals of time you can use `setInterval()`.
 
 ```js
 setInterval(() => {
   console.log('Ping')
-}, 1000)
+}, 1000) // will repeat every second
 
 const interval = setInterval(() => {
-  console.log('Ping')
+  console.log('Pong')
   // you can cancel an interval by calling clearInterval
   clearInterval(interval)
-}, 1000)
+}, 1000) // will repeat every second, but we cancel it after the first execution!
 ```
 
 Execute this example with:

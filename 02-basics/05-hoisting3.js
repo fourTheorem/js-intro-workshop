@@ -4,10 +4,11 @@
 /* eslint no-redeclare: "off" */
 /* eslint no-undef: "off" */
 
-/**
- * when the variable is used inside the function,
- * the variable is hoisted only to the top of the function
- */
+/*
+
+When the variable is used inside the function, the variable is hoisted only to the top of the function
+
+*/
 
 var a = 4
 

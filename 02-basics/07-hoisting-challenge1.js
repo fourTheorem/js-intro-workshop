@@ -1,9 +1,25 @@
 /* eslint no-var: "off" */
 /* eslint no-unused-vars: "off" */
 
-/**
- * What value will be printed?
- */
+/*
+
+Here's a bit of a challenge for you.
+
+Can you tell what value will be printed by the following code?
+
+<detail>
+<summary>Check out the answer!</summary>
+
+Answer: **10**
+
+- Here the variable `x` declared (and of course initialized) outside the function `test`.
+- It has a global scope and that’s why it is accessible anywhere in this scope globally.
+- However, the one declared and initialized inside the `test` function can be accessible only inside that function.
+- So the below code snippet will print 20 on the console upon execution.
+
+</detail>
+
+*/
 
 var x = 10
 function test () {
@@ -12,12 +28,3 @@ function test () {
 
 test()
 console.log(x)
-
-/**
- * Answer: 10
- *
- * Here the variable ‘x’ declared (and of course initialized) outside the function ‘test’
- * has a global scope and that’s why it is accessible anywhere in this scope globally.
- * However, the one declared and initialized inside the ‘test’ function can be accessible only inside that function.
- * So the below code snippet will print 20 on the console upon execution.
- */

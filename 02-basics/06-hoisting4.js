@@ -5,9 +5,11 @@
 /* eslint no-redeclare: "off" */
 /* eslint no-undef: "off" */
 
-/**
- * when using let, the variable is not hoisted
- */
+/*
+
+When using `let`, the variable is NOT hoisted!
+
+*/
 
 a = 5 // ReferenceError: Cannot access 'a' before initialization
 console.log(a)
