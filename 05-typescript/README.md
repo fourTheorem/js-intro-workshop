@@ -32,7 +32,7 @@ interface IChicken extends IAnimal {
 Execute this example with:
 
 ```bash
-node ./05-typescript/01-interfaces.ts
+ts-node ./05-typescript/01-interfaces.ts
 ```
 
 
@@ -53,7 +53,7 @@ const companies: Array<string> = ['Tesla', 'SpaceX', 'Neuralink', 'The Boring Co
 Execute this example with:
 
 ```bash
-node ./05-typescript/02-types1.ts
+ts-node ./05-typescript/02-types1.ts
 ```
 
 
@@ -88,7 +88,7 @@ const people: Tree<Person> = { /* eslint "no-unused-vars": "off" */
 Execute this example with:
 
 ```bash
-node ./05-typescript/03-types2.ts
+ts-node ./05-typescript/03-types2.ts
 ```
 
 
@@ -112,7 +112,7 @@ type PublicProfile = Pick<CEO, 'name' | 'company'>
 Execute this example with:
 
 ```bash
-node ./05-typescript/04-types3.ts
+ts-node ./05-typescript/04-types3.ts
 ```
 
 
@@ -135,7 +135,7 @@ const brands = ['Ferrari', 'Audi']
 Execute this example with:
 
 ```bash
-node ./05-typescript/05-generics1.ts
+ts-node ./05-typescript/05-generics1.ts
 ```
 
 
@@ -155,7 +155,7 @@ count(myList)
 Execute this example with:
 
 ```bash
-node ./05-typescript/06-generics2.ts
+ts-node ./05-typescript/06-generics2.ts
 ```
 
 
@@ -198,7 +198,7 @@ countSized(letters)
 Execute this example with:
 
 ```bash
-node ./05-typescript/07-generics3.ts
+ts-node ./05-typescript/07-generics3.ts
 ```
 
 
@@ -231,7 +231,7 @@ export {} // needed for TS to transpile this to an ESM module (and therefore sup
 Execute this example with:
 
 ```bash
-node ./05-typescript/08-generics4.ts
+ts-node ./05-typescript/08-generics4.ts
 ```
 
 
@@ -265,7 +265,7 @@ export {} // needed for TS to transpile this to an ESM module (and therefore sup
 Execute this example with:
 
 ```bash
-node ./05-typescript/09-generics5.ts
+ts-node ./05-typescript/09-generics5.ts
 ```
 
 
@@ -291,7 +291,7 @@ const todo: TodoPreview = {
 Execute this example with:
 
 ```bash
-node ./05-typescript/10-generics6.ts
+ts-node ./05-typescript/10-generics6.ts
 ```
 
 
