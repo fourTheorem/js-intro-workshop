@@ -9,9 +9,9 @@ Here's another of a challenge for you.
 Can you tell what value will be printed by the following code?
 
 <details>
-<summary>Check out the answer!</summary>
+<summary>👀  Check out the answer!</summary>
 
-Answer: `undefined`
+### Answer: `undefined`
 
 - This is because of the combined effect of variable scoping and variable hoisting
 - The above code snippet will be interpreted as the following before execution:
