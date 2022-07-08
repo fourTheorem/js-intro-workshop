@@ -32,11 +32,11 @@ server.listen(8000)
 // > curl -X GET http://localhost:8000/some/random/path
 ```
 
-Execute this example with:
-
-```bash
-node ./10-web-servers-and-cli/01-hello-web-server.js
-```
+> Execute this example with:
+>
+> ```bash
+> node ./10-web-servers-and-cli/01-hello-web-server.js
+> ```
 
 
 ## [`02-server-with-request-batching.js`](./02-server-with-request-batching.js)
@@ -116,11 +116,11 @@ const server = createServer(async (req, res) => {
 server.listen(8000)
 ```
 
-Execute this example with:
-
-```bash
-node ./10-web-servers-and-cli/02-server-with-request-batching.js
-```
+> Execute this example with:
+>
+> ```bash
+> node ./10-web-servers-and-cli/02-server-with-request-batching.js
+> ```
 
 
 ## [`03-hello-cli.js`](./03-hello-cli.js)
@@ -141,11 +141,11 @@ console.log(`Hello ${who || 'World'}!`)
 // > ./10-web-servers-and-cli/03-hello-cli.js friends
 ```
 
-Execute this example with:
-
-```bash
-node ./10-web-servers-and-cli/03-hello-cli.js
-```
+> Execute this example with:
+>
+> ```bash
+> node ./10-web-servers-and-cli/03-hello-cli.js
+> ```
 
 
 ## [`04-uppercasify-cli.js`](./04-uppercasify-cli.js)
@@ -182,11 +182,11 @@ await pipeline(
 // > curl -s https://www.gutenberg.org/files/2701/old/moby10b.txt | node 10-web-servers-and-cli/04-uppercasify-cli.js
 ```
 
-Execute this example with:
-
-```bash
-node ./10-web-servers-and-cli/04-uppercasify-cli.js
-```
+> Execute this example with:
+>
+> ```bash
+> node ./10-web-servers-and-cli/04-uppercasify-cli.js
+> ```
 
 
 ---

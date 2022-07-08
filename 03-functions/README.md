@@ -36,11 +36,11 @@ const hello3 = (name) => `Hello ${name}`
 // Also it does not allow you to re-define the value of `this`
 ```
 
-Execute this example with:
-
-```bash
-node ./03-functions/01-functions1.js
-```
+> Execute this example with:
+>
+> ```bash
+> node ./03-functions/01-functions1.js
+> ```
 
 
 ## [`02-functions2.js`](./02-functions2.js)
@@ -58,11 +58,11 @@ console.log(greeting())
 console.log(greeting.bind('world')())
 ```
 
-Execute this example with:
-
-```bash
-node ./03-functions/02-functions2.js
-```
+> Execute this example with:
+>
+> ```bash
+> node ./03-functions/02-functions2.js
+> ```
 
 
 ## [`03-arrow-functions.js`](./03-arrow-functions.js)
@@ -96,11 +96,11 @@ const whatsThisFn = function () {
 whatsThisFn.call('ciao') // "ciao"
 ```
 
-Execute this example with:
-
-```bash
-node ./03-functions/03-arrow-functions.js
-```
+> Execute this example with:
+>
+> ```bash
+> node ./03-functions/03-arrow-functions.js
+> ```
 
 
 ---

@@ -53,11 +53,11 @@ ${description}
 ${code}
 \`\`\`
 
-Execute this example with:
-
-\`\`\`bash
-${type === 'ts' ? 'ts-' : ''}node ${filePath}
-\`\`\`
+> Execute this example with:
+>
+> \`\`\`bash
+> ${type === 'ts' ? 'ts-' : ''}node ${filePath}
+> \`\`\`
 `
   }).join('\n')
 

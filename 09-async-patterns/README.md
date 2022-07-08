@@ -28,11 +28,11 @@ function cancelLatestBooking (userId) {
 // Cancelled booking for user Luigi
 ```
 
-Execute this example with:
-
-```bash
-node ./09-async-patterns/01-sequential-execution.js
-```
+> Execute this example with:
+>
+> ```bash
+> node ./09-async-patterns/01-sequential-execution.js
+> ```
 
 
 ## [`02-sequential-execution-gotcha.js`](./02-sequential-execution-gotcha.js)
@@ -58,11 +58,11 @@ function cancelLatestBooking (userId) {
 // The same happens if you use Array.prototype.map() and similar methods
 ```
 
-Execute this example with:
-
-```bash
-node ./09-async-patterns/02-sequential-execution-gotcha.js
-```
+> Execute this example with:
+>
+> ```bash
+> node ./09-async-patterns/02-sequential-execution-gotcha.js
+> ```
 
 
 ## [`03-concurrent-execution.js`](./03-concurrent-execution.js)
@@ -92,11 +92,11 @@ function cancelLatestBooking (userId) {
 // What happens to the other promises when one rejects?!
 ```
 
-Execute this example with:
-
-```bash
-node ./09-async-patterns/03-concurrent-execution.js
-```
+> Execute this example with:
+>
+> ```bash
+> node ./09-async-patterns/03-concurrent-execution.js
+> ```
 
 
 ## [`04-concurrent-execution-all-settled.js`](./04-concurrent-execution-all-settled.js)
@@ -155,11 +155,11 @@ function cancelLatestBooking (userId) {
 }
 ```
 
-Execute this example with:
-
-```bash
-node ./09-async-patterns/04-concurrent-execution-all-settled.js
-```
+> Execute this example with:
+>
+> ```bash
+> node ./09-async-patterns/04-concurrent-execution-all-settled.js
+> ```
 
 
 ## [`05-promisify1.js`](./05-promisify1.js)
@@ -197,11 +197,11 @@ const compressed = await gzipPromise(Buffer.from('Hello from Node.js'))
 console.log(compressed) // <Buffer 1f 8b 08 00 00 00 00 ... 00 00 00>
 ```
 
-Execute this example with:
-
-```bash
-node ./09-async-patterns/05-promisify1.js
-```
+> Execute this example with:
+>
+> ```bash
+> node ./09-async-patterns/05-promisify1.js
+> ```
 
 
 ## [`06-promisify2.js`](./06-promisify2.js)
@@ -229,11 +229,11 @@ const compressed = await gzipPromise(Buffer.from('Hello from Node.js'))
 console.log(compressed) // <Buffer 1f 8b 08 00 00 00 00 ... 00 00 00>
 ```
 
-Execute this example with:
-
-```bash
-node ./09-async-patterns/06-promisify2.js
-```
+> Execute this example with:
+>
+> ```bash
+> node ./09-async-patterns/06-promisify2.js
+> ```
 
 
 ## [`07-callbackify1.js`](./07-callbackify1.js)
@@ -272,11 +272,11 @@ videoTitleFilterCb('18y6OjdeR6o', (err, videoTitle) => {
 })
 ```
 
-Execute this example with:
-
-```bash
-node ./09-async-patterns/07-callbackify1.js
-```
+> Execute this example with:
+>
+> ```bash
+> node ./09-async-patterns/07-callbackify1.js
+> ```
 
 
 ## [`08-callbackify2.js`](./08-callbackify2.js)
@@ -309,11 +309,11 @@ videoTitleFilterCb('18y6OjdeR6o', (err, videoTitle) => {
 })
 ```
 
-Execute this example with:
-
-```bash
-node ./09-async-patterns/08-callbackify2.js
-```
+> Execute this example with:
+>
+> ```bash
+> node ./09-async-patterns/08-callbackify2.js
+> ```
 
 
 ---

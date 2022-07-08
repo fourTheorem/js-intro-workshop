@@ -42,11 +42,11 @@ function doSomethingAsync (arg1, arg2) {
 }
 ```
 
-Execute this example with:
-
-```bash
-node ./07-promises/01-promise.js
-```
+> Execute this example with:
+>
+> ```bash
+> node ./07-promises/01-promise.js
+> ```
 
 
 ## [`02-promise-then.js`](./02-promise-then.js)
@@ -77,11 +77,11 @@ function doSomethingOrFail () {
 }
 ```
 
-Execute this example with:
-
-```bash
-node ./07-promises/02-promise-then.js
-```
+> Execute this example with:
+>
+> ```bash
+> node ./07-promises/02-promise-then.js
+> ```
 
 
 ## [`03-promise-chain.js`](./03-promise-chain.js)
@@ -141,11 +141,11 @@ function delay (ms) {
 }
 ```
 
-Execute this example with:
-
-```bash
-node ./07-promises/03-promise-chain.js
-```
+> Execute this example with:
+>
+> ```bash
+> node ./07-promises/03-promise-chain.js
+> ```
 
 
 ## [`04-promise-chain-dynamic.js`](./04-promise-chain-dynamic.js)
@@ -173,11 +173,11 @@ function delay (ms) {
 }
 ```
 
-Execute this example with:
-
-```bash
-node ./07-promises/04-promise-chain-dynamic.js
-```
+> Execute this example with:
+>
+> ```bash
+> node ./07-promises/04-promise-chain-dynamic.js
+> ```
 
 
 ## [`05-promise-chain-catch.js`](./05-promise-chain-catch.js)
@@ -218,11 +218,11 @@ function doSomethingOrFail () {
 }
 ```
 
-Execute this example with:
-
-```bash
-node ./07-promises/05-promise-chain-catch.js
-```
+> Execute this example with:
+>
+> ```bash
+> node ./07-promises/05-promise-chain-catch.js
+> ```
 
 
 ## [`06-promise-finally.js`](./06-promise-finally.js)
@@ -263,11 +263,11 @@ function runQuery (sql) {
 }
 ```
 
-Execute this example with:
-
-```bash
-node ./07-promises/06-promise-finally.js
-```
+> Execute this example with:
+>
+> ```bash
+> node ./07-promises/06-promise-finally.js
+> ```
 
 
 ## [`07-promise-orchestration.js`](./07-promise-orchestration.js)
@@ -309,11 +309,11 @@ getLatestBooking(userId)
   })
 ```
 
-Execute this example with:
-
-```bash
-node ./07-promises/07-promise-orchestration.js
-```
+> Execute this example with:
+>
+> ```bash
+> node ./07-promises/07-promise-orchestration.js
+> ```
 
 
 ---

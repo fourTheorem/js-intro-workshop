@@ -29,11 +29,11 @@ function doSomethingAsync () {
 }
 ```
 
-Execute this example with:
-
-```bash
-node ./08-async-await/01-await.js
-```
+> Execute this example with:
+>
+> ```bash
+> node ./08-async-await/01-await.js
+> ```
 
 
 ## [`02-await-try-catch.js`](./02-await-try-catch.js)
@@ -59,11 +59,11 @@ function doSomethingAsyncThatActuallyFails () {
 }
 ```
 
-Execute this example with:
-
-```bash
-node ./08-async-await/02-await-try-catch.js
-```
+> Execute this example with:
+>
+> ```bash
+> node ./08-async-await/02-await-try-catch.js
+> ```
 
 
 ## [`03-async-function.js`](./03-async-function.js)
@@ -114,11 +114,11 @@ try {
 }
 ```
 
-Execute this example with:
-
-```bash
-node ./08-async-await/03-async-function.js
-```
+> Execute this example with:
+>
+> ```bash
+> node ./08-async-await/03-async-function.js
+> ```
 
 
 ## [`04-async-await.js`](./04-async-await.js)
@@ -146,11 +146,11 @@ function delay (ms) {
 }
 ```
 
-Execute this example with:
-
-```bash
-node ./08-async-await/04-async-await.js
-```
+> Execute this example with:
+>
+> ```bash
+> node ./08-async-await/04-async-await.js
+> ```
 
 
 ## [`05-async-await-orchestration.js`](./05-async-await-orchestration.js)
@@ -187,11 +187,11 @@ async function cancelLastBooking (userId) {
 await cancelLastBooking('Luciano')
 ```
 
-Execute this example with:
-
-```bash
-node ./08-async-await/05-async-await-orchestration.js
-```
+> Execute this example with:
+>
+> ```bash
+> node ./08-async-await/05-async-await-orchestration.js
+> ```
 
 
 ---

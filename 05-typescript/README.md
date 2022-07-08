@@ -29,11 +29,11 @@ interface IChicken extends IAnimal {
 // }
 ```
 
-Execute this example with:
-
-```bash
-ts-node ./05-typescript/01-interfaces.ts
-```
+> Execute this example with:
+>
+> ```bash
+> ts-node ./05-typescript/01-interfaces.ts
+> ```
 
 
 ## [`02-types1.ts`](./02-types1.ts)
@@ -52,11 +52,11 @@ const dateOfBirth: Date = new Date(1971, 5, 28)
 const companies: Array<string> = ['Tesla', 'SpaceX', 'Neuralink', 'The Boring Company']
 ```
 
-Execute this example with:
-
-```bash
-ts-node ./05-typescript/02-types1.ts
-```
+> Execute this example with:
+>
+> ```bash
+> ts-node ./05-typescript/02-types1.ts
+> ```
 
 
 ## [`03-types2.ts`](./03-types2.ts)
@@ -89,11 +89,11 @@ const people: Tree<Person> = {
 }
 ```
 
-Execute this example with:
-
-```bash
-ts-node ./05-typescript/03-types2.ts
-```
+> Execute this example with:
+>
+> ```bash
+> ts-node ./05-typescript/03-types2.ts
+> ```
 
 
 ## [`04-types3.ts`](./04-types3.ts)
@@ -113,11 +113,11 @@ type CEO = Employee & {
 type PublicProfile = Pick<CEO, 'name' | 'company'>
 ```
 
-Execute this example with:
-
-```bash
-ts-node ./05-typescript/04-types3.ts
-```
+> Execute this example with:
+>
+> ```bash
+> ts-node ./05-typescript/04-types3.ts
+> ```
 
 
 ## [`05-generics1.ts`](./05-generics1.ts)
@@ -136,11 +136,11 @@ const brands = ['Ferrari', 'Audi']
 // append(brands, 2) // Type number is not assignable to parameter of type string
 ```
 
-Execute this example with:
-
-```bash
-ts-node ./05-typescript/05-generics1.ts
-```
+> Execute this example with:
+>
+> ```bash
+> ts-node ./05-typescript/05-generics1.ts
+> ```
 
 
 ## [`06-generics2.ts`](./06-generics2.ts)
@@ -156,11 +156,11 @@ const myList = ['A', 'B', 'C']
 count(myList)
 ```
 
-Execute this example with:
-
-```bash
-ts-node ./05-typescript/06-generics2.ts
-```
+> Execute this example with:
+>
+> ```bash
+> ts-node ./05-typescript/06-generics2.ts
+> ```
 
 
 ## [`07-generics3.ts`](./07-generics3.ts)
@@ -199,11 +199,11 @@ const letters = ['A', 'B', 'C']
 countSized(letters)
 ```
 
-Execute this example with:
-
-```bash
-ts-node ./05-typescript/07-generics3.ts
-```
+> Execute this example with:
+>
+> ```bash
+> ts-node ./05-typescript/07-generics3.ts
+> ```
 
 
 ## [`08-generics4.ts`](./08-generics4.ts)
@@ -235,11 +235,11 @@ console.log(`There are ${result.count} users registered`)
 export {} // needed for TS to transpile this to an ESM module (and therefore support top level await)
 ```
 
-Execute this example with:
-
-```bash
-ts-node ./05-typescript/08-generics4.ts
-```
+> Execute this example with:
+>
+> ```bash
+> ts-node ./05-typescript/08-generics4.ts
+> ```
 
 
 ## [`09-generics5.ts`](./09-generics5.ts)
@@ -270,11 +270,11 @@ console.log(`There are ${result.count} users registered`)
 export {} // needed for TS to transpile this to an ESM module (and therefore support top level await)
 ```
 
-Execute this example with:
-
-```bash
-ts-node ./05-typescript/09-generics5.ts
-```
+> Execute this example with:
+>
+> ```bash
+> ts-node ./05-typescript/09-generics5.ts
+> ```
 
 
 ## [`10-generics6.ts`](./10-generics6.ts)
@@ -300,11 +300,11 @@ const todo: TodoPreview = {
 }
 ```
 
-Execute this example with:
-
-```bash
-ts-node ./05-typescript/10-generics6.ts
-```
+> Execute this example with:
+>
+> ```bash
+> ts-node ./05-typescript/10-generics6.ts
+> ```
 
 
 ---

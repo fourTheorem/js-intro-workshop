@@ -27,11 +27,11 @@ foo = {
 }
 ```
 
-Execute this example with:
-
-```bash
-node ./02-basics/01-vars1.js
-```
+> Execute this example with:
+>
+> ```bash
+> node ./02-basics/01-vars1.js
+> ```
 
 
 ## [`02-vars2.js`](./02-vars2.js)
@@ -66,11 +66,11 @@ const e = []
 e.push('chicken') // this is allowed as above
 ```
 
-Execute this example with:
-
-```bash
-node ./02-basics/02-vars2.js
-```
+> Execute this example with:
+>
+> ```bash
+> node ./02-basics/02-vars2.js
+> ```
 
 
 ## [`03-hoisting1.js`](./03-hoisting1.js)
@@ -91,11 +91,11 @@ var test
 console.log(test) // undefined
 ```
 
-Execute this example with:
-
-```bash
-node ./02-basics/03-hoisting1.js
-```
+> Execute this example with:
+>
+> ```bash
+> node ./02-basics/03-hoisting1.js
+> ```
 
 
 ## [`04-hoisting2.js`](./04-hoisting2.js)
@@ -119,11 +119,11 @@ console.log(a) // undefined
 var a = 5
 ```
 
-Execute this example with:
-
-```bash
-node ./02-basics/04-hoisting2.js
-```
+> Execute this example with:
+>
+> ```bash
+> node ./02-basics/04-hoisting2.js
+> ```
 
 
 ## [`05-hoisting3.js`](./05-hoisting3.js)
@@ -143,11 +143,11 @@ greet() // hello
 console.log(b) // Uncaught ReferenceError: b is not defined
 ```
 
-Execute this example with:
-
-```bash
-node ./02-basics/05-hoisting3.js
-```
+> Execute this example with:
+>
+> ```bash
+> node ./02-basics/05-hoisting3.js
+> ```
 
 
 ## [`06-hoisting4.js`](./06-hoisting4.js)
@@ -176,11 +176,11 @@ greet() // Uncaught TypeError: greet is not a function
 // }
 ```
 
-Execute this example with:
-
-```bash
-node ./02-basics/06-hoisting4.js
-```
+> Execute this example with:
+>
+> ```bash
+> node ./02-basics/06-hoisting4.js
+> ```
 
 
 ## [`07-hoisting-challenge1.js`](./07-hoisting-challenge1.js)
@@ -212,11 +212,11 @@ test()
 console.log(x) // ???
 ```
 
-Execute this example with:
-
-```bash
-node ./02-basics/07-hoisting-challenge1.js
-```
+> Execute this example with:
+>
+> ```bash
+> node ./02-basics/07-hoisting-challenge1.js
+> ```
 
 
 ## [`08-hoisting-challenge2.js`](./08-hoisting-challenge2.js)
@@ -266,11 +266,11 @@ function test () {
 test()
 ```
 
-Execute this example with:
-
-```bash
-node ./02-basics/08-hoisting-challenge2.js
-```
+> Execute this example with:
+>
+> ```bash
+> node ./02-basics/08-hoisting-challenge2.js
+> ```
 
 
 ## [`09-set-immediate.js`](./09-set-immediate.js)
@@ -294,11 +294,11 @@ setImmediate(() => {
 console.log('global') // 1.
 ```
 
-Execute this example with:
-
-```bash
-node ./02-basics/09-set-immediate.js
-```
+> Execute this example with:
+>
+> ```bash
+> node ./02-basics/09-set-immediate.js
+> ```
 
 
 ## [`10-set-timeout.js`](./10-set-timeout.js)
@@ -315,11 +315,11 @@ setTimeout(() => {
 console.log('Bye')
 ```
 
-Execute this example with:
-
-```bash
-node ./02-basics/10-set-timeout.js
-```
+> Execute this example with:
+>
+> ```bash
+> node ./02-basics/10-set-timeout.js
+> ```
 
 
 ## [`11-set-interval.js`](./11-set-interval.js)
@@ -338,11 +338,11 @@ const interval = setInterval(() => {
 }, 1000) // will repeat every second, but we cancel it after the first execution!
 ```
 
-Execute this example with:
-
-```bash
-node ./02-basics/11-set-interval.js
-```
+> Execute this example with:
+>
+> ```bash
+> node ./02-basics/11-set-interval.js
+> ```
 
 
 ---

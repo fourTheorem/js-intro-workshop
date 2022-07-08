@@ -25,11 +25,11 @@ delay(1000, () => console.log('I have waited 1 second just to say hello!'))
 //          ^---- passing a callback here
 ```
 
-Execute this example with:
-
-```bash
-node ./06-callbacks/01-callback.js
-```
+> Execute this example with:
+>
+> ```bash
+> node ./06-callbacks/01-callback.js
+> ```
 
 
 ## [`02-callback-errors.js`](./02-callback-errors.js)
@@ -62,11 +62,11 @@ fiftyFiftyFailure((err, result) => {
 })
 ```
 
-Execute this example with:
-
-```bash
-node ./06-callbacks/02-callback-errors.js
-```
+> Execute this example with:
+>
+> ```bash
+> node ./06-callbacks/02-callback-errors.js
+> ```
 
 
 ## [`03-nested-callbacks.js`](./03-nested-callbacks.js)
@@ -118,11 +118,11 @@ getLatestBooking(userId, (err, booking) => {
 })
 ```
 
-Execute this example with:
-
-```bash
-node ./06-callbacks/03-nested-callbacks.js
-```
+> Execute this example with:
+>
+> ```bash
+> node ./06-callbacks/03-nested-callbacks.js
+> ```
 
 
 ---

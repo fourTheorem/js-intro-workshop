@@ -38,11 +38,11 @@ console.log(greeter.greet())
 console.log(greeter.greet.bind({ name: 'fox' })())
 ```
 
-Execute this example with:
-
-```bash
-node ./04-classes-and-prototypes/01-prototypes1.js
-```
+> Execute this example with:
+>
+> ```bash
+> node ./04-classes-and-prototypes/01-prototypes1.js
+> ```
 
 
 ## [`02-prototypes2.js`](./02-prototypes2.js)
@@ -77,11 +77,11 @@ console.log(greeter.constructor.toString()) // ... the full code of the construc
 console.log(Object.getPrototypeOf(greeter)) // { megaGreet: [Function (anonymous)], VERSION: '1.0.0' }
 ```
 
-Execute this example with:
-
-```bash
-node ./04-classes-and-prototypes/02-prototypes2.js
-```
+> Execute this example with:
+>
+> ```bash
+> node ./04-classes-and-prototypes/02-prototypes2.js
+> ```
 
 
 ## [`03-prototypes3.js`](./03-prototypes3.js)
@@ -103,11 +103,11 @@ String.prototype.greet = function () {
 console.log('Chicken'.greet()) // "Hello Chicken"
 ```
 
-Execute this example with:
-
-```bash
-node ./04-classes-and-prototypes/03-prototypes3.js
-```
+> Execute this example with:
+>
+> ```bash
+> node ./04-classes-and-prototypes/03-prototypes3.js
+> ```
 
 
 ## [`04-class1.js`](./04-class1.js)
@@ -131,11 +131,11 @@ const car = new Vehicle(4, 'diesel')
 car.describe()
 ```
 
-Execute this example with:
-
-```bash
-node ./04-classes-and-prototypes/04-class1.js
-```
+> Execute this example with:
+>
+> ```bash
+> node ./04-classes-and-prototypes/04-class1.js
+> ```
 
 
 ## [`05-class2.js`](./05-class2.js)
@@ -174,11 +174,11 @@ audi.describe()
 volvo.describe()
 ```
 
-Execute this example with:
-
-```bash
-node ./04-classes-and-prototypes/05-class2.js
-```
+> Execute this example with:
+>
+> ```bash
+> node ./04-classes-and-prototypes/05-class2.js
+> ```
 
 
 ## [`06-class3.js`](./06-class3.js)
@@ -231,11 +231,11 @@ volvo.describe()
 tesla.describe()
 ```
 
-Execute this example with:
-
-```bash
-node ./04-classes-and-prototypes/06-class3.js
-```
+> Execute this example with:
+>
+> ```bash
+> node ./04-classes-and-prototypes/06-class3.js
+> ```
 
 
 ## [`07-class4.js`](./07-class4.js)
@@ -270,11 +270,11 @@ chair.purchase()
 // console.log(char.#basePrice) // SyntaxError: Private field '#basePrice' must be declared in an enclosing class
 ```
 
-Execute this example with:
-
-```bash
-node ./04-classes-and-prototypes/07-class4.js
-```
+> Execute this example with:
+>
+> ```bash
+> node ./04-classes-and-prototypes/07-class4.js
+> ```
 
 
 ## [`08-class5.js`](./08-class5.js)
@@ -302,11 +302,11 @@ console.log(`Chair category = ${Chair.CATEGORY}`)
 console.log(`Table category = ${Table.CATEGORY}`)
 ```
 
-Execute this example with:
-
-```bash
-node ./04-classes-and-prototypes/08-class5.js
-```
+> Execute this example with:
+>
+> ```bash
+> node ./04-classes-and-prototypes/08-class5.js
+> ```
 
 
 ## [`09-class-with-typescript.ts`](./09-class-with-typescript.ts)
@@ -352,11 +352,11 @@ const chicken = new Chicken()
 // console.log(chicken._age);
 ```
 
-Execute this example with:
-
-```bash
-ts-node ./04-classes-and-prototypes/09-class-with-typescript.ts
-```
+> Execute this example with:
+>
+> ```bash
+> ts-node ./04-classes-and-prototypes/09-class-with-typescript.ts
+> ```
 
 
 ## [`10-getters-setters.js`](./10-getters-setters.js)
@@ -398,11 +398,11 @@ const myClass = new MyClass(90, 2)
 console.log(myClass.total)
 ```
 
-Execute this example with:
-
-```bash
-node ./04-classes-and-prototypes/10-getters-setters.js
-```
+> Execute this example with:
+>
+> ```bash
+> node ./04-classes-and-prototypes/10-getters-setters.js
+> ```
 
 
 ---
