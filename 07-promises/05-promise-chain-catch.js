@@ -1,8 +1,13 @@
 /*
-  In this example we chain 3 promises together.
-  Anyone of these promises can fail.
-  The final catch block will capture any rejection in the chain.
-  This gives us an easy way to handle errors without code duplication.
+
+In this example we chain 3 promises together.
+
+Anyone of these promises can fail.
+
+The final catch block will capture any rejection in the chain.
+
+This gives us an easy way to handle errors without code duplication.
+
 */
 
 doSomethingOrFail() // shot 1

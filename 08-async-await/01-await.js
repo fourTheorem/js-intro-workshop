@@ -1,7 +1,9 @@
 /*
-  Sometimes we just want to wait for a promise to resolve before executing the next line.
 
-  the `await` keyword allows us to do exactly that!
+Sometimes we just want to wait for a promise to resolve before executing the next line.
+
+The `await` keyword allows us to do exactly that!
+
 */
 
 const promiseObj = doSomethingAsync()

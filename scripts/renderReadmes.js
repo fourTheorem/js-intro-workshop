@@ -87,7 +87,8 @@ for (const readme of readmes) {
   const dest = `${dir}/README.md`
   console.log(dest)
 
-  const examples = await glob(`./${dir}/*.{js,ts}`)
+  const examples = (await glob(`./${dir}/*.{js,ts}`))
+    .filter(pathName => !basename(pathName).startsWith('_')) // removes files which name starts for "_"
 
   const examplesData = await Promise.all(examples.map(processExample))
   const examplesMarkdown = generateExamplesMarkdown(examplesData)

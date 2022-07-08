@@ -1,26 +1,28 @@
 /*
-  What if you have to use a callback based function, but you'd rather use a promise?
 
-  Node.js offers some "promisified" versions of callback-based functions.
+What if you have to use a callback based function, but you'd rather use a promise?
 
-  For instance:
+Node.js offers some "promisified" versions of callback-based functions.
 
-  - `setTimeout`, `setImmediate`, `setInterval` -> `import timers from 'timers/promises'`
-  - `import fs from 'fs'` -> `import fs from 'fs/promises'`
-  - `import stream from 'stream'` -> `import stream from 'stream/promises'`
-  - `import dns from 'dns'` -> `import dns from 'dns/promises'`
+For instance:
 
-  But what if we want to use a callback-based function that does not have a promise-based version yet?
+- `setTimeout`, `setImmediate`, `setInterval` -> `import timers from 'timers/promises'`
+- `import fs from 'fs'` -> `import fs from 'fs/promises'`
+- `import stream from 'stream'` -> `import stream from 'stream/promises'`
+- `import dns from 'dns'` -> `import dns from 'dns/promises'`
 
-  We can "promisify" it by ourselves!
+But what if we want to use a callback-based function that does not have a promise-based version yet?
 
-  Let's promisify `zlib.gzip` which looks like this:
+We can "promisify" it by ourselves!
 
-  ```plain
-  zlib.gzip(buffer[, options], callback)
-  ```
+Let's promisify `zlib.gzip` which looks like this:
 
-  We can do that by using the `promisify` function from the `util` module.
+```plain
+zlib.gzip(buffer[, options], callback)
+```
+
+We can do that by using the `promisify` function from the `util` module.
+
 */
 
 import { gzip } from 'zlib'

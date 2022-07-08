@@ -1,7 +1,9 @@
 /*
-  But what if we are in an environment that does not have the `promisify` utility (e.g. the browser)?
 
-  How hard can it be to promisify a function?
+But what if we are in an environment that does not have the `promisify` utility (e.g. the browser)?
+
+How hard can it be to promisify a function?
+
 */
 
 import { gzip } from 'zlib' // zlib.gzip(buffer[, options], callback)

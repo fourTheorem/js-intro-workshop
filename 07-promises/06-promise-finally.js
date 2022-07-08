@@ -1,6 +1,8 @@
 /*
-  if you want to do something when a promise is settled (regardless if it is resolved or rejected)
-  you can use the finally() method
+
+If you want to do something when a promise is settled (regardless if it is resolved or rejected)
+you can use the finally() method
+
 */
 
 class DBConnection {

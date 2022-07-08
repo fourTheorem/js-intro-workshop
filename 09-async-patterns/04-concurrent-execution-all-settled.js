@@ -1,19 +1,21 @@
 /*
-  What happens to the other promises when one rejects?!
 
-  They keep going!
+What happens to the other promises when one rejects?!
 
-  So the other promises might just succeed or fail, hard to tell!
+They keep going!
 
-  But what if we want to know and maybe retry the failed ones?
+So the other promises might just succeed or fail, hard to tell!
 
-  We can use `Promise.allSettled(...promises)`!
+But what if we want to know and maybe retry the failed ones?
 
-  Promise.allSettled() receives a list of promises and it returns a new Promise.
+We can use `Promise.allSettled(...promises)`!
 
-  The promise will settle only when all the promises in the list settle (either reject or resolve).
+Promise.allSettled() receives a list of promises and it returns a new Promise.
 
-  The promise will always resolve with an array of objects, each object representing a promise in the list.
+The promise will settle only when all the promises in the list settle (either reject or resolve).
+
+The promise will always resolve with an array of objects, each object representing a promise in the list.
+
 */
 
 const users = ['Peach', 'Toad', 'Mario', 'Luigi']

@@ -9,7 +9,7 @@ TODO:
 
 Sometimes we just want to wait for a promise to resolve before executing the next line.
 
-  the `await` keyword allows us to do exactly that!
+The `await` keyword allows us to do exactly that!
 
 ```js
 const promiseObj = doSomethingAsync()
@@ -40,10 +40,10 @@ node ./08-async-await/01-await.js
 
 But what if the promise rejects?
 
-  When using await rejections will be propagated (thrown) as synchronous exceptions, so we
-  can capture them using a try/catch block.
+When using await rejections will be propagated (thrown) as synchronous exceptions, so we
+can capture them using a `try/catch` block.
 
-  This allows us to uniform error handling across syncrhonous and asynchronous code!
+This allows us to uniform error handling across syncrhonous and asynchronous code!
 
 ```js
 try {
@@ -70,10 +70,10 @@ node ./08-async-await/02-await-try-catch.js
 
 Await is just one part of the story.
 
-  We also have async.
+We also have async.
 
-  Async is a keyword that can be used in front of a function definiton.
-  It gives a function a new meaning: it always returns a promise!
+Async is a keyword that can be used in front of a function definiton.
+It gives a function a new meaning: it always returns a promise!
 
 ```js
 async function doSomethingAsync () {
@@ -125,9 +125,9 @@ node ./08-async-await/03-async-function.js
 
 But what happens when you use `await` inside an async function?
 
-  We said an async function always returns a promise.
+We said an async function always returns a promise.
 
-  The promise will be pending until the function completes (or throws an exception).
+The promise will be pending until the function completes (or throws an exception).
 
 ```js
 async function typingEffect (text, msDelay) {
@@ -157,13 +157,14 @@ node ./08-async-await/04-async-await.js
 
 Let's see how await can make our previous booking example much more readable.
 
-  In this exampole, we want to:
-   - get the latest booking for a given user
-   - If the booking exists, we want to cancel it
-   - If the booking was paid for, we want to refund the user
+In this exampole, we want to:
+
+- get the latest booking for a given user
+- If the booking exists, we want to cancel it
+- If the booking was paid for, we want to refund the user
 
 ```js
-import { getLatestBooking, cancelBooking, refundUser } from './booking-utils.js'
+import { getLatestBooking, cancelBooking, refundUser } from './_booking-utils.js'
 
 async function cancelLastBooking (userId) {
   const booking = await getLatestBooking(userId)
@@ -190,46 +191,6 @@ Execute this example with:
 
 ```bash
 node ./08-async-await/05-async-await-orchestration.js
-```
-
-
-## [`booking-utils.js`](./booking-utils.js)
-
-
-
-```js
-// simulated functions.
-// In real life these functions would be using some data storage to fetch the data
-
-const booking = {
-  id: '123',
-  paid: true,
-  paidAmount: 100
-}
-
-export function getLatestBooking (userId) {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => resolve(booking), 500)
-  })
-}
-
-export function cancelBooking (bookingId) {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => resolve(booking), 500)
-  })
-}
-
-export function refundUser (userId, amount) {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => resolve(booking.paidAmount), 500)
-  })
-}
-```
-
-Execute this example with:
-
-```bash
-node ./08-async-await/booking-utils.js
 ```
 
 

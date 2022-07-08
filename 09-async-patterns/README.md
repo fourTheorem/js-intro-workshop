@@ -7,7 +7,7 @@ TODO:
 
 ## [`01-sequential-execution.js`](./01-sequential-execution.js)
 
-if you want to execute multiple asynchronous operations in sequence you can simply use a loop and await
+If you want to execute multiple asynchronous operations in sequence you can simply use a loop and `await`
 
 ```js
 const users = ['Peach', 'Toad', 'Mario', 'Luigi']
@@ -69,12 +69,12 @@ node ./09-async-patterns/02-sequential-execution-gotcha.js
 
 What if you want to execute multiple async operations concurrently?
 
-  You could use `Promise.all(...promises)`.
+You could use `Promise.all(...promises)`.
 
-  Promise.all() receives a list of promises and it returns a new Promise.
+`Promise.all()` receives a list of promises and it returns a new Promise.
 
-  This promise will resolve when all the promises in the list resolve,
-  but it rejects as soon as ONE of the promises rejects!
+This promise will resolve when all the promises in the list resolve,
+but it rejects as soon as ONE of the promises rejects!
 
 ```js
 const users = ['Peach', 'Toad', 'Mario', 'Luigi']
@@ -103,19 +103,19 @@ node ./09-async-patterns/03-concurrent-execution.js
 
 What happens to the other promises when one rejects?!
 
-  They keep going!
+They keep going!
 
-  So the other promises might just succeed or fail, hard to tell!
+So the other promises might just succeed or fail, hard to tell!
 
-  But what if we want to know and maybe retry the failed ones?
+But what if we want to know and maybe retry the failed ones?
 
-  We can use `Promise.allSettled(...promises)`!
+We can use `Promise.allSettled(...promises)`!
 
-  Promise.allSettled() receives a list of promises and it returns a new Promise.
+Promise.allSettled() receives a list of promises and it returns a new Promise.
 
-  The promise will settle only when all the promises in the list settle (either reject or resolve).
+The promise will settle only when all the promises in the list settle (either reject or resolve).
 
-  The promise will always resolve with an array of objects, each object representing a promise in the list.
+The promise will always resolve with an array of objects, each object representing a promise in the list.
 
 ```js
 const users = ['Peach', 'Toad', 'Mario', 'Luigi']
@@ -166,26 +166,26 @@ node ./09-async-patterns/04-concurrent-execution-all-settled.js
 
 What if you have to use a callback based function, but you'd rather use a promise?
 
-  Node.js offers some "promisified" versions of callback-based functions.
+Node.js offers some "promisified" versions of callback-based functions.
 
-  For instance:
+For instance:
 
-  - `setTimeout`, `setImmediate`, `setInterval` -> `import timers from 'timers/promises'`
-  - `import fs from 'fs'` -> `import fs from 'fs/promises'`
-  - `import stream from 'stream'` -> `import stream from 'stream/promises'`
-  - `import dns from 'dns'` -> `import dns from 'dns/promises'`
+- `setTimeout`, `setImmediate`, `setInterval` -> `import timers from 'timers/promises'`
+- `import fs from 'fs'` -> `import fs from 'fs/promises'`
+- `import stream from 'stream'` -> `import stream from 'stream/promises'`
+- `import dns from 'dns'` -> `import dns from 'dns/promises'`
 
-  But what if we want to use a callback-based function that does not have a promise-based version yet?
+But what if we want to use a callback-based function that does not have a promise-based version yet?
 
-  We can "promisify" it by ourselves!
+We can "promisify" it by ourselves!
 
-  Let's promisify `zlib.gzip` which looks like this:
+Let's promisify `zlib.gzip` which looks like this:
 
-  ```plain
-  zlib.gzip(buffer[, options], callback)
-  ```
+```plain
+zlib.gzip(buffer[, options], callback)
+```
 
-  We can do that by using the `promisify` function from the `util` module.
+We can do that by using the `promisify` function from the `util` module.
 
 ```js
 import { gzip } from 'zlib'
@@ -208,7 +208,7 @@ node ./09-async-patterns/05-promisify1.js
 
 But what if we are in an environment that does not have the `promisify` utility (e.g. the browser)?
 
-  How hard can it be to promisify a function?
+How hard can it be to promisify a function?
 
 ```js
 import { gzip } from 'zlib' // zlib.gzip(buffer[, options], callback)
@@ -240,12 +240,12 @@ node ./09-async-patterns/06-promisify2.js
 
 This is a bit of a rare use case, but it happens sometimes...
 
-  What if we have written a promise-based function, but we have to pass it in a context
-  that accepts a callback-based function instead?
+What if we have written a promise-based function, but we have to pass it in a context
+that accepts a callback-based function instead?
 
-  We need to "callbackify" our function!
+We need to "callbackify" our function!
 
-  There is a utility for that called `callbackify` from the `util` package.
+There is a utility for that called `callbackify` from the `util` package.
 
 ```js
 import { callbackify } from 'util'

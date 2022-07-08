@@ -1,12 +1,14 @@
 /*
-  This is a bit of a rare use case, but it happens sometimes...
 
-  What if we have written a promise-based function, but we have to pass it in a context
-  that accepts a callback-based function instead?
+This is a bit of a rare use case, but it happens sometimes...
 
-  We need to "callbackify" our function!
+What if we have written a promise-based function, but we have to pass it in a context
+that accepts a callback-based function instead?
 
-  There is a utility for that called `callbackify` from the `util` package.
+We need to "callbackify" our function!
+
+There is a utility for that called `callbackify` from the `util` package.
+
 */
 
 import { callbackify } from 'util'

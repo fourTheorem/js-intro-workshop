@@ -1,6 +1,8 @@
 /*
-  If in a .then() block we return another promise, we are delegating
-  the resolution (or the rejection) of the current promise to the new promise.
+
+If in a `.then()` block we return another promise, we are delegating
+the resolution (or the rejection) of the current promise to the new promise.
+
 */
 
 delay(100)

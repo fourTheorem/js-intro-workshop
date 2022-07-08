@@ -14,7 +14,7 @@
 
   Test your solution with:
 
-  > npm run ex -- 09-patterns/exercises/01-faulty-connection.test.js
+  > npm run ex -- 09-async-patterns/exercises/01-faulty-connection.test.js
 */
 
 export default async function deleteRecords (db, ids) {

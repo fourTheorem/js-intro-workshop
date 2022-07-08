@@ -1,6 +1,8 @@
 /*
-  calling .then() or .catch() on a promise returns a new promise,
-  so we can create promise chains dynamically
+
+Calling `.then()` or `.catch()` on a promise returns a new promise,
+so we can create promise chains dynamically
+
 */
 
 await animateText('Just because something doesn\'t do what you planned it to do doesn\'t mean it\'s useless. - Thomas Edison (Inventor)')

@@ -1,10 +1,12 @@
 /*
-  Await is just one part of the story.
 
-  We also have async.
+Await is just one part of the story.
 
-  Async is a keyword that can be used in front of a function definiton.
-  It gives a function a new meaning: it always returns a promise!
+We also have async.
+
+Async is a keyword that can be used in front of a function definiton.
+It gives a function a new meaning: it always returns a promise!
+
 */
 
 async function doSomethingAsync () {

@@ -1,11 +1,13 @@
 /*
-  Calling a callback-based function:
 
-  doSomethingAsync(arg1, arg2, arg3, cb)
+Calling a callback-based function:
 
-  The last argument is a "callback" function.
+doSomethingAsync(arg1, arg2, arg3, cb)
 
-  The callback function is called for us when the asynchronous operation is complete.
+The last argument is a "callback" function.
+
+The callback function is called for us when the asynchronous operation is complete.
+
 */
 
 // example of callback-based async function

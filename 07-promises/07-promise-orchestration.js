@@ -1,14 +1,17 @@
 /*
- Promises help to get rid of callback hell thanks to chaining
- but it can still be a bit tricky to orchestrate asynchronous workflows with optional steps.
 
-  In this exampole, we want to:
-   - get the latest booking for a given user
-   - If the booking exists, we want to cancel it
-   - If the booking was paid for, we want to refund the user
+Promises help to get rid of callback hell thanks to chaining
+but it can still be a bit tricky to orchestrate asynchronous workflows with optional steps.
+
+In this exampole, we want to:
+
+- get the latest booking for a given user
+- If the booking exists, we want to cancel it
+- If the booking was paid for, we want to refund the user
+
 */
 
-import { getLatestBooking, cancelBooking, refundUser } from './booking-utils.js'
+import { getLatestBooking, cancelBooking, refundUser } from './_booking-utils.js'
 
 const userId = 'Luciano'
 

@@ -1,5 +1,7 @@
 /*
-  Do not use Array.prototype.forEach for async sequential execution
+
+Do not use Array.prototype.forEach for async sequential execution
+
 */
 
 const users = ['Peach', 'Toad', 'Mario', 'Luigi']

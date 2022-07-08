@@ -1,10 +1,12 @@
-/**
-  Callback-based functions generally call their callback function with 2 arguments:
+/*
 
-    - err: an error object, if any
-    - result: the result of the operation, if successful
+Callback-based functions generally call their callback function with 2 arguments:
 
-  So, when we write a callback we always need to check for errors first.
+  - err: an error object, if any
+  - result: the result of the operation, if successful
+
+So, when we write a callback we always need to check for errors first.
+
 */
 
 function fiftyFiftyFailure (cb) {

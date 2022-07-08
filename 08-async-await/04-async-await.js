@@ -1,9 +1,11 @@
 /*
-  But what happens when you use `await` inside an async function?
 
-  We said an async function always returns a promise.
+But what happens when you use `await` inside an async function?
 
-  The promise will be pending until the function completes (or throws an exception).
+We said an async function always returns a promise.
+
+The promise will be pending until the function completes (or throws an exception).
+
 */
 
 async function typingEffect (text, msDelay) {

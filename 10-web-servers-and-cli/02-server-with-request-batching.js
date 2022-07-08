@@ -1,9 +1,11 @@
 /*
-  This is an advanced example that shows how to create a web server that uses
-  the technique of request batching to improve performance when handling a high throughput
-  of similar requests.
 
-  For more details check out the benchmarks here: https://loige.link/req-batch-bench
+This is an advanced example that shows how to create a web server that uses
+the technique of request batching to improve performance when handling a high throughput
+of similar requests.
+
+For more details check out the benchmarks here: https://loige.link/req-batch-bench
+
 */
 
 import { createServer } from 'http'

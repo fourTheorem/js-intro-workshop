@@ -1,5 +1,7 @@
 /*
-  if you want to execute multiple asynchronous operations in sequence you can simply use a loop and await
+
+If you want to execute multiple asynchronous operations in sequence you can simply use a loop and `await`
+
 */
 
 const users = ['Peach', 'Toad', 'Mario', 'Luigi']

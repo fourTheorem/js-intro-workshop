@@ -1,8 +1,10 @@
 #!/usr/bin/env node
 /*
-  Node.js makes it very easy to create CLI applications too.
 
-  This is a very simple CLI application that prints a greeting to the console.
+Node.js makes it very easy to create CLI applications too.
+
+This is a very simple CLI application that prints a greeting to the console.
+
 */
 
 const args = process.argv.slice(2) // we skip the first two arguments because they are `node` and the name of the script

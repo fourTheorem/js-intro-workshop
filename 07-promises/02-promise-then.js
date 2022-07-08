@@ -1,9 +1,11 @@
 /*
- How do we know when a promise resolves or rejects?
 
- With the .then() and .catch() methods of a promise object
+How do we know when a promise resolves or rejects?
 
- Note that you can chain .then() and .catch() methods to the promise object!
+With the `.then()` and `.catch()` methods of a promise object
+
+Note that you can chain `.then()` and `.catch()` methods to the promise object!
+
 */
 
 doSomethingOrFail()

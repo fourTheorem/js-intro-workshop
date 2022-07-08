@@ -9,9 +9,9 @@ TODO:
 
 With Node.js is very easy to create web servers.
 
-  You can do that without having to install a web framework.
+You can do that without having to install a web framework.
 
-  Simply use the `http` (or `https`) package.
+Simply use the `http` (or `https`) package.
 
 ```js
 import { createServer } from 'http'
@@ -42,10 +42,10 @@ node ./10-web-servers-and-cli/01-hello-web-server.js
 ## [`02-server-with-request-batching.js`](./02-server-with-request-batching.js)
 
 This is an advanced example that shows how to create a web server that uses
-  the technique of request batching to improve performance when handling a high throughput
-  of similar requests.
+the technique of request batching to improve performance when handling a high throughput
+of similar requests.
 
-  For more details check out the benchmarks here: https://loige.link/req-batch-bench
+For more details check out the benchmarks here: https://loige.link/req-batch-bench
 
 ```js
 import { createServer } from 'http'
@@ -127,7 +127,7 @@ node ./10-web-servers-and-cli/02-server-with-request-batching.js
 
 Node.js makes it very easy to create CLI applications too.
 
-  This is a very simple CLI application that prints a greeting to the console.
+This is a very simple CLI application that prints a greeting to the console.
 
 ```js
 const args = process.argv.slice(2) // we skip the first two arguments because they are `node` and the name of the script
@@ -152,12 +152,12 @@ node ./10-web-servers-and-cli/03-hello-cli.js
 
 In Node.js CLI scripts you can easily interact with STDIN and STDOUT.
 
-  - `process.stdin` is a readable stream that you can use to read data from standard input.
-  - `process.stdout` is a writable stream that you can use to write data to standard output.
+- `process.stdin` is a readable stream that you can use to read data from standard input.
+- `process.stdout` is a writable stream that you can use to write data to standard output.
 
-  The following script reads text from the standard input, uppercasifies and writes the resulting data to standard output.
+The following script reads text from the standard input, uppercasifies and writes the resulting data to standard output.
 
-  Here we are using advanced streaming features. If you want to learn more about those check out: https://github.com/lmammino/streams-workshop
+Here we are using advanced streaming features. If you want to learn more about those check out: https://github.com/lmammino/streams-workshop
 
 ```js
 import { Transform } from 'stream'

@@ -8,11 +8,11 @@ TODO:
 ## [`01-promise.js`](./01-promise.js)
 
 With callbacks we are not in charge!
- We need to trust that the async function will call our callbacks when the async work is completed!
+We need to trust that the async function will call our callbacks when the async work is completed!
 
- Promise help us to be more in control!
+Promise help us to be more in control!
 
- A promise is an object that represents the status of an asynchronous operation.
+A promise is an object that represents the status of an asynchronous operation.
 
 ```js
 const promiseObj = doSomethingAsync('arg1', 'arg2')
@@ -53,9 +53,9 @@ node ./07-promises/01-promise.js
 
 How do we know when a promise resolves or rejects?
 
- With the .then() and .catch() methods of a promise object
+With the `.then()` and `.catch()` methods of a promise object
 
- Note that you can chain .then() and .catch() methods to the promise object!
+Note that you can chain `.then()` and `.catch()` methods to the promise object!
 
 ```js
 doSomethingOrFail()
@@ -86,8 +86,8 @@ node ./07-promises/02-promise-then.js
 
 ## [`03-promise-chain.js`](./03-promise-chain.js)
 
-If in a .then() block we return another promise, we are delegating
-  the resolution (or the rejection) of the current promise to the new promise.
+If in a `.then()` block we return another promise, we are delegating
+the resolution (or the rejection) of the current promise to the new promise.
 
 ```js
 delay(100)
@@ -150,8 +150,8 @@ node ./07-promises/03-promise-chain.js
 
 ## [`04-promise-chain-dynamic.js`](./04-promise-chain-dynamic.js)
 
-calling .then() or .catch() on a promise returns a new promise,
-  so we can create promise chains dynamically
+Calling `.then()` or `.catch()` on a promise returns a new promise,
+so we can create promise chains dynamically
 
 ```js
 await animateText('Just because something doesn\'t do what you planned it to do doesn\'t mean it\'s useless. - Thomas Edison (Inventor)')
@@ -183,9 +183,12 @@ node ./07-promises/04-promise-chain-dynamic.js
 ## [`05-promise-chain-catch.js`](./05-promise-chain-catch.js)
 
 In this example we chain 3 promises together.
-  Anyone of these promises can fail.
-  The final catch block will capture any rejection in the chain.
-  This gives us an easy way to handle errors without code duplication.
+
+Anyone of these promises can fail.
+
+The final catch block will capture any rejection in the chain.
+
+This gives us an easy way to handle errors without code duplication.
 
 ```js
 doSomethingOrFail() // shot 1
@@ -224,8 +227,8 @@ node ./07-promises/05-promise-chain-catch.js
 
 ## [`06-promise-finally.js`](./06-promise-finally.js)
 
-if you want to do something when a promise is settled (regardless if it is resolved or rejected)
-  you can use the finally() method
+If you want to do something when a promise is settled (regardless if it is resolved or rejected)
+you can use the finally() method
 
 ```js
 class DBConnection {
@@ -270,15 +273,16 @@ node ./07-promises/06-promise-finally.js
 ## [`07-promise-orchestration.js`](./07-promise-orchestration.js)
 
 Promises help to get rid of callback hell thanks to chaining
- but it can still be a bit tricky to orchestrate asynchronous workflows with optional steps.
+but it can still be a bit tricky to orchestrate asynchronous workflows with optional steps.
 
-  In this exampole, we want to:
-   - get the latest booking for a given user
-   - If the booking exists, we want to cancel it
-   - If the booking was paid for, we want to refund the user
+In this exampole, we want to:
+
+- get the latest booking for a given user
+- If the booking exists, we want to cancel it
+- If the booking was paid for, we want to refund the user
 
 ```js
-import { getLatestBooking, cancelBooking, refundUser } from './booking-utils.js'
+import { getLatestBooking, cancelBooking, refundUser } from './_booking-utils.js'
 
 const userId = 'Luciano'
 
@@ -309,46 +313,6 @@ Execute this example with:
 
 ```bash
 node ./07-promises/07-promise-orchestration.js
-```
-
-
-## [`booking-utils.js`](./booking-utils.js)
-
-
-
-```js
-// simulated functions.
-// In real life these functions would be using some data storage to fetch the data
-
-const booking = {
-  id: '123',
-  paid: true,
-  paidAmount: 100
-}
-
-export function getLatestBooking (userId) {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => resolve(booking), 500)
-  })
-}
-
-export function cancelBooking (bookingId) {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => resolve(booking), 500)
-  })
-}
-
-export function refundUser (userId, amount) {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => resolve(booking.paidAmount), 500)
-  })
-}
-```
-
-Execute this example with:
-
-```bash
-node ./07-promises/booking-utils.js
 ```
 
 

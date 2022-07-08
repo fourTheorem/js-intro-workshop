@@ -1,9 +1,11 @@
 /*
-  With Node.js is very easy to create web servers.
 
-  You can do that without having to install a web framework.
+With Node.js is very easy to create web servers.
 
-  Simply use the `http` (or `https`) package.
+You can do that without having to install a web framework.
+
+Simply use the `http` (or `https`) package.
+
 */
 
 import { createServer } from 'http'

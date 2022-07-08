@@ -1,11 +1,12 @@
 /*
 
- With callbacks we are not in charge!
- We need to trust that the async function will call our callbacks when the async work is completed!
+With callbacks we are not in charge!
+We need to trust that the async function will call our callbacks when the async work is completed!
 
- Promise help us to be more in control!
+Promise help us to be more in control!
 
- A promise is an object that represents the status of an asynchronous operation.
+A promise is an object that represents the status of an asynchronous operation.
+
 */
 
 const promiseObj = doSomethingAsync('arg1', 'arg2')

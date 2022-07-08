@@ -9,11 +9,11 @@ TODO:
 
 Calling a callback-based function:
 
-  doSomethingAsync(arg1, arg2, arg3, cb)
+doSomethingAsync(arg1, arg2, arg3, cb)
 
-  The last argument is a "callback" function.
+The last argument is a "callback" function.
 
-  The callback function is called for us when the asynchronous operation is complete.
+The callback function is called for us when the asynchronous operation is complete.
 
 ```js
 // example of callback-based async function
@@ -34,18 +34,14 @@ node ./06-callbacks/01-callback.js
 
 ## [`02-callback-errors.js`](./02-callback-errors.js)
 
+Callback-based functions generally call their callback function with 2 arguments:
 
+  - err: an error object, if any
+  - result: the result of the operation, if successful
+
+So, when we write a callback we always need to check for errors first.
 
 ```js
-/**
-  Callback-based functions generally call their callback function with 2 arguments:
-
-    - err: an error object, if any
-    - result: the result of the operation, if successful
-
-  So, when we write a callback we always need to check for errors first.
-*/
-
 function fiftyFiftyFailure (cb) {
   if (Math.random() > 0.5) {
     return cb(new Error('It failed!'))
@@ -76,17 +72,17 @@ node ./06-callbacks/02-callback-errors.js
 ## [`03-nested-callbacks.js`](./03-nested-callbacks.js)
 
 The problem with callbacks is that when you have to orchestrate multiple asynchronous operations, the code
- can easily get messy...
+can easily get messy...
 
-  In this example we are implementing a piece of functionality for an hotel booking system.
+In this example we are implementing a piece of functionality for an hotel booking system.
 
-  We want to:
-   - get the latest booking for a given user
-   - If the booking exists, we want to cancel it
-   - If the booking was paid for, we want to refund the user
+We want to:
+  - get the latest booking for a given user
+  - If the booking exists, we want to cancel it
+  - If the booking was paid for, we want to refund the user
 
 ```js
-import { getLatestBooking, cancelBooking, refundUser } from './booking-utils.js'
+import { getLatestBooking, cancelBooking, refundUser } from './_booking-utils.js'
 
 const userId = 'Luciano'
 
@@ -126,39 +122,6 @@ Execute this example with:
 
 ```bash
 node ./06-callbacks/03-nested-callbacks.js
-```
-
-
-## [`booking-utils.js`](./booking-utils.js)
-
-
-
-```js
-// simulated functions.
-// In real life these functions would be using some data storage to fetch the data
-
-export function getLatestBooking (userId, cb) {
-  const booking = {
-    id: '123',
-    paid: true,
-    paidAmount: 100
-  }
-  setTimeout(() => cb(null, booking), 500)
-}
-
-export function cancelBooking (bookingId, cb) {
-  setTimeout(() => cb(null), 500)
-}
-
-export function refundUser (userId, amount, cb) {
-  setTimeout(() => cb(null), 500)
-}
-```
-
-Execute this example with:
-
-```bash
-node ./06-callbacks/booking-utils.js
 ```
 
 

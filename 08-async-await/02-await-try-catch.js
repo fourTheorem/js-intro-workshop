@@ -1,10 +1,12 @@
 /*
-  But what if the promise rejects?
 
-  When using await rejections will be propagated (thrown) as synchronous exceptions, so we
-  can capture them using a try/catch block.
+But what if the promise rejects?
 
-  This allows us to uniform error handling across syncrhonous and asynchronous code!
+When using await rejections will be propagated (thrown) as synchronous exceptions, so we
+can capture them using a `try/catch` block.
+
+This allows us to uniform error handling across syncrhonous and asynchronous code!
+
 */
 
 try {

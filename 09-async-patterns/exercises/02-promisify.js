@@ -15,7 +15,7 @@
 
   Test your solution with:
 
-  > npm run ex -- 09-patterns/exercises/02-promisify.test.js
+  > npm run ex -- 09-async-patterns/exercises/02-promisify.test.js
 */
 
 function rouletteCb (escape, cb) {
