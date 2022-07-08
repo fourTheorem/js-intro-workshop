@@ -1,6 +1,10 @@
 /* eslint no-unused-vars: "off" */
 
-// different ways to declare a function
+/*
+
+In JavaScript there are different ways to declare a function
+
+*/
 
 function hello (name) {
   return `Hello ${name}`

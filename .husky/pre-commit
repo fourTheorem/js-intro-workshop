@@ -6,3 +6,4 @@ added_files=$(git diff --name-only --cached --diff-filter=d)
 npm run render-readmes
 
 git add ${added_files}
+HUSKY=0 git commit --amend --no-edit --no-verify
