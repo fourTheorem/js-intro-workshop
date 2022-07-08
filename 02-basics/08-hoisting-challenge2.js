@@ -8,7 +8,7 @@ Here's another of a challenge for you.
 
 Can you tell what value will be printed by the following code?
 
-<detail>
+<details>
 <summary>Check out the answer!</summary>
 
 Answer: `undefined`
@@ -33,7 +33,7 @@ function test()
 test();
 ```
 
-</detail>
+</details>
 
 */
 

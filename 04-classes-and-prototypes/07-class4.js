@@ -1,6 +1,8 @@
-/**
- * Private members
- */
+/*
+
+A recent update to the ECMAScript standard has added a new feature called private properties.
+
+*/
 
 class Product {
   #basePrice
@@ -26,3 +28,4 @@ class Product {
 
 const chair = new Product('Office Chair')
 chair.purchase()
+// console.log(char.#basePrice) // SyntaxError: Private field '#basePrice' must be declared in an enclosing class

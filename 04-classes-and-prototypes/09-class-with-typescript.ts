@@ -1,5 +1,18 @@
 /* eslint no-unused-vars: "off" */
 
+/*
+
+We will discuss more TypeScript, but for now, keep in mind that when you declare a class with TypeScript,
+it will automatically create a type associated to it and it will use it for type-checking.
+
+TypeScript classes support additional features like access modifiers.
+
+These are different from the access modifiers you've seen previously. In fact, TypeScript uses the access modifiers only at compile time (type checking).
+
+Once the code is converted to JavaScript, you can access private members if you really want to (they are not really private)!
+
+*/
+
 class Chicken {
   private _age: number = 2
 

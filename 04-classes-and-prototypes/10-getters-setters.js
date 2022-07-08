@@ -1,3 +1,9 @@
+/*
+
+The class syntax supports also getters and setters for dynamic properties
+
+*/
+
 // Objects
 const myObject = {
   price: 10,

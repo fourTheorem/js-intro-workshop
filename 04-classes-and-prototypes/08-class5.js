@@ -1,6 +1,8 @@
-/**
- * Static members
- */
+/*
+
+It is also possible to define static members in a class.
+
+*/
 
 class Product {
   static CATEGORY = 'Undefined'

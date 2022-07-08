@@ -1,3 +1,9 @@
+/*
+
+The new `class` keyword can be combined with the `extends` keyword to create a class that inherits from another class (or to link the current prototype to another prototype).
+
+*/
+
 class Vehicle {
   constructor (wheels, engine) {
     this.wheels = wheels

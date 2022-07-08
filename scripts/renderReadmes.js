@@ -56,7 +56,7 @@ ${code}
 Execute this example with:
 
 \`\`\`bash
-node ${filePath}
+${type === 'ts' ? 'ts-' : ''}node ${filePath}
 \`\`\`
 `
   }).join('\n')
