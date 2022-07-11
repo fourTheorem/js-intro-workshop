@@ -3,14 +3,15 @@
 We can use the destructuring assignment to loop over keys-and-values of an object:
 
 <details>
-  <summary><strong>Syntax</strong></summary>
+<summary><strong>Syntax</strong></summary>
 
-  > const { a, b } = obj
-  > const { a: a1, b: b1 } = obj
-  > const { a: a1 = aDefault, b = bDefault } = obj
-  > const { a, b, ...rest } = obj
-  > const { a: a1, b: b1, ...rest } = obj
-  >
+> ```js
+> const { a, b } = obj
+> const { a: a1, b: b1 } = obj
+> const { a: a1 = aDefault, b = bDefault } = obj
+> const { a, b, ...rest } = obj
+> const { a: a1, b: b1, ...rest } = obj
+> ```
 </details>
 */
 

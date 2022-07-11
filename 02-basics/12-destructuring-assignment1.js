@@ -4,16 +4,17 @@ The destructuring assignment syntax is a JavaScript expression that makes it
 possible to unpack values from arrays or properties from objects, into distinct variables.
 
 <details>
-  <summary><strong>Syntax</strong></summary>
+<summary><strong>Syntax</strong></summary>
 
-  > const [a, b] = array
-  > const [a, , b] = array
-  > const [a = aDefault, b] = array
-  > const [a, b, ...rest] = array
-  > const [a, , b, ...rest] = array
-  > const [a, b, ...{ pop, push }] = array
-  > const [a, b, ...[c, d]] = array
-  >
+> ```js
+> const [a, b] = array
+> const [a, , b] = array
+> const [a = aDefault, b] = array
+> const [a, b, ...rest] = array
+> const [a, , b, ...rest] = array
+> const [a, b, ...{ pop, push }] = array
+> const [a, b, ...[c, d]] = array
+> ```
 </details>
 
 */
