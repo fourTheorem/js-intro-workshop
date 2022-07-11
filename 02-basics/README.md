@@ -345,6 +345,78 @@ const interval = setInterval(() => {
 > ```
 
 
+## [`12-destructuring-assignment1.js`](./12-destructuring-assignment1.js)
+
+The destructuring assignment syntax is a JavaScript expression that makes it
+possible to unpack values from arrays or properties from objects, into distinct variables.
+
+<details>
+  <summary><strong>Syntax</strong></summary>
+
+  > const [a, b] = array
+  > const [a, , b] = array
+  > const [a = aDefault, b] = array
+  > const [a, b, ...rest] = array
+  > const [a, , b, ...rest] = array
+  > const [a, b, ...{ pop, push }] = array
+  > const [a, b, ...[c, d]] = array
+  >
+</details>
+
+```js
+const [a, b, ...rest] = [10, 20, 30, 40, 50]
+
+console.log(a)
+// expected output: 10
+
+console.log(b)
+// expected output: 20
+
+console.log(rest)
+// expected output: Array [30, 40, 50]
+```
+
+> Execute this example with:
+>
+> ```bash
+> node ./02-basics/12-destructuring-assignment1.js
+> ```
+
+
+## [`13-destructuring-assignment2.js`](./13-destructuring-assignment2.js)
+
+We can use the destructuring assignment to loop over keys-and-values of an object:
+
+<details>
+  <summary><strong>Syntax</strong></summary>
+
+  > const { a, b } = obj
+  > const { a: a1, b: b1 } = obj
+  > const { a: a1 = aDefault, b = bDefault } = obj
+  > const { a, b, ...rest } = obj
+  > const { a: a1, b: b1, ...rest } = obj
+  >
+</details>
+
+```js
+const user = {
+  name: 'John',
+  age: 30
+}
+
+// loop over keys-and-values
+for (const [key, value] of Object.entries(user)) {
+  alert(`${key}:${value}`) // name:John, then age:30
+}
+```
+
+> Execute this example with:
+>
+> ```bash
+> node ./02-basics/13-destructuring-assignment2.js
+> ```
+
+
 ---
 
 
