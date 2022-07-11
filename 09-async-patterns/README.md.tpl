@@ -1,4 +1,4 @@
-# 03. Async Patterns
+# 09. Async Patterns
 
 In this chapter we will learn some useful async patterns that can be used often when working with JavaScript:
 
