@@ -386,7 +386,7 @@ console.log(rest)
 
 ## [`13-destructuring-assignment2.js`](./13-destructuring-assignment2.js)
 
-We can use the destructuring assignment to loop over keys-and-values of an object:
+The destructuring assignment also works with objects
 
 <details>
 <summary><strong>Syntax</strong></summary>
@@ -403,6 +403,37 @@ We can use the destructuring assignment to loop over keys-and-values of an objec
 ```js
 const user = {
   name: 'John',
+  age: 30,
+  location: 'London',
+  team: 'Arsenal'
+}
+
+const { name, location = 'Amsterdam', ...rest } = user
+
+console.log(name)
+// expected output: John
+
+console.log(location)
+// expected output: London
+
+console.log(rest)
+// expected output: Object { age: 30, team: 'Arsenal' }
+```
+
+> Execute this example with:
+>
+> ```bash
+> node ./02-basics/13-destructuring-assignment2.js
+> ```
+
+
+## [`14-destructuring-assignment3.js`](./14-destructuring-assignment3.js)
+
+We can use the destructuring assignment to loop over keys-and-values of an object:
+
+```js
+const user = {
+  name: 'John',
   age: 30
 }
 
@@ -415,7 +446,7 @@ for (const [key, value] of Object.entries(user)) {
 > Execute this example with:
 >
 > ```bash
-> node ./02-basics/13-destructuring-assignment2.js
+> node ./02-basics/14-destructuring-assignment3.js
 > ```
 
 

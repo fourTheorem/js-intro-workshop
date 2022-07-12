@@ -1,6 +1,6 @@
 /*
 
-We can use the destructuring assignment to loop over keys-and-values of an object:
+The destructuring assignment also works with objects
 
 <details>
 <summary><strong>Syntax</strong></summary>
@@ -17,10 +17,18 @@ We can use the destructuring assignment to loop over keys-and-values of an objec
 
 const user = {
   name: 'John',
-  age: 30
+  age: 30,
+  location: 'London',
+  team: 'Arsenal'
 }
 
-// loop over keys-and-values
-for (const [key, value] of Object.entries(user)) {
-  alert(`${key}:${value}`) // name:John, then age:30
-}
+const { name, location = 'Amsterdam', ...rest } = user
+
+console.log(name)
+// expected output: John
+
+console.log(location)
+// expected output: London
+
+console.log(rest)
+// expected output: Object { age: 30, team: 'Arsenal' }
