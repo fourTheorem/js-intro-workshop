@@ -3,7 +3,7 @@
 
   Let's implement a `print2dArray(arr)` function.
   This function receives a 2D array of numbers and returns a
-  flat array if values.
+  flat array of values.
 
   Example:
 
