@@ -74,7 +74,7 @@ We will try to put the main concepts in order so that we can have a solid unders
 - This is done to give developers the freedom to structure the code in the most convenient way, while giving the final users only a handful of files to be downloaded through the browser.
 - The process of packaging all the files together is called **module bundling** and the tools used for this process **module bundlers**.
 - The most famous module bundlers are **Webpack** and **Rollup**.
-- Module bundlers can also pre-process your source code. For instance they can convert TypeScript to JavaScript before the bundling, or remove code that is not utilised (tree-shacking).
+- Module bundlers can also pre-process your source code. For instance they can convert TypeScript to JavaScript before the bundling, or remove code that is not utilised (tree-shaking).
 
 
 ---
